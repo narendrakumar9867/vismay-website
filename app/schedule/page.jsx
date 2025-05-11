@@ -27,13 +27,13 @@ import Footer from "@/components/Footer";
 export const metadata = {
   title: "schedule|Vismay",
   description:
-    "Relive the magic of Vismay at IIITDMJ—explore unforgettable moments, vibrant snapshots, and the spirit of celebration that brings our cultural community together.",
+    "Relive the magic of Vismay at GMCMirag—explore unforgettable moments, vibrant snapshots, and the spirit of celebration that brings our cultural community together.",
   keywords:
     "Vismay, GMCMiraj, Cultural Fest, Dance, Drama, Music, Art, Celebration, Gallery, Photos, Videos, Past Events, Previous Editions",
   openGraph: {
     title: "schedule|Vismay",
     description:
-      "Relive the magic of Vismay at IIITDMJ—explore unforgettable moments, vibrant snapshots, and the spirit of celebration that brings our cultural community together.",
+      "Relive the magic of Vismay at GMCMirag—explore unforgettable moments, vibrant snapshots, and the spirit of celebration that brings our cultural community together.",
     url: "https://vismaygmcmiraj.in/schedule",
     images:
       "https://res.cloudinary.com/drtmfrghg/image/upload/v1708016443/opengraph-image_vkiopn.jpg",

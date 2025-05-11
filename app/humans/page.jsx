@@ -43,13 +43,13 @@ import { FaWhatsapp } from "react-icons/fa";
 export const metadata = {
   title: "humans|Vismay",
   description:
-    "Relive the magic of Vismay at IIITDMJ—explore unforgettable moments, vibrant snapshots, and the spirit of celebration that brings our cultural community together.",
+    "Relive the magic of Vismay at GMCMirag—explore unforgettable moments, vibrant snapshots, and the spirit of celebration that brings our cultural community together.",
   keywords:
     "Vismay, GMCMiraj, Cultural Fest, Dance, Drama, Music, Art, Celebration, Gallery, Photos, Videos, Past Events, Previous Editions",
   openGraph: {
     title: "humans|Vismay",
     description:
-      "Relive the magic of Vismay at IIITDMJ—explore unforgettable moments, vibrant snapshots, and the spirit of celebration that brings our cultural community together.",
+      "Relive the magic of Vismay at GMCMirag—explore unforgettable moments, vibrant snapshots, and the spirit of celebration that brings our cultural community together.",
     url: "https://vismaygmcmiraj.in/humans",
     images:
       "https://res.cloudinary.com/drtmfrghg/image/upload/v1708016443/opengraph-image_vkiopn.jpg",
