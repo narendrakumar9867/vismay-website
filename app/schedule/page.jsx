@@ -426,24 +426,28 @@ export default function Schedule() {
           </Dialog>
         </div>
       </div>
-      <div className="bg-black w-full h-full py-24 lg:py-40">
-        <div
-          className="flex flex-col justify-between gap-20 md:flex-row 
-          px-4 md:px-8 xl:px-20 2xl:px-40"
-        >
-          <p
-            className="max-w-3xl text-6xl md:text-[5.5rem] lg:text-[7rem] xl:text-[9rem] 
-              text-white font-normal md:leading-[8rem] lg:leading-[10rem] 
-              tracking-tighter md:tracking-[-0.2rem]"
-          >
-            Empower
-            <br /> Your Digital
-            <br /> Odyssey!
-          </p>
-
-          <FooterAnimation />
-        </div>
-      </div>
+      <div className="relative bg-black w-full h-screen flex flex-col justify-end pt-48 md:pt-52 lg:pt-72 px-6 md:px-12 xl:px-24">
+                <div className="flex flex-col md:flex-row justify-between items-center gap-16 md:gap-20 py-20">
+                    <p className="max-w-4xl text-6xl md:text-7xl lg:text-8xl xl:text-[9rem] font-extrabold leading-tight text-center md:text-left tracking-tight">
+                      {["Myth", "Maya", "Mystery!"].map((word, i) => (
+                        <span
+                            key={i}
+                            className="block bg-clip-text text-transparent drop-shadow-[0_0_15px_rgba(255,215,0,0.6)]"
+                            style={{
+                            backgroundImage: "url('/mmm background.jpg')",
+                            backgroundSize: "cover",
+                            backgroundPosition: "center",
+                            filter: "brightness(1.4)",
+                            WebkitTextStroke: "1px #f5deb3",
+                          }}
+                        >
+                        {word}
+                        </span>
+                      ))}
+                    </p>
+                  <FooterAnimation />
+                </div>
+              </div>
       <Footer />
     </>
   );
