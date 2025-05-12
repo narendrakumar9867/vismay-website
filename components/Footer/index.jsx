@@ -29,10 +29,28 @@ const Footer = () => {
         </div>
       </div>
       <p
-        className="text-stone-400 text-lg font-normal leading-normal 
+        className="text-white text-lg font-normal leading-normal 
           tracking-tight pt-12 mb-8"
+        style={{ wordSpacing: "0.2em" }}
       >
-        © 2025 Vismay, All rights reserved
+        <span style={{ margin: "0.2em" }}>© 2025 Vismay, All rights reserved; Designed by</span> 
+        <a 
+          href="https://www.linkedin.com/in/rushabh-doshi-aba7b0241/" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="text-white hover:underline"
+        >
+          Rushabh Doshi
+        </a> 
+        <span style={{ margin: "0.2em" }}>&</span>
+        <a 
+          href="https://www.linkedin.com/in/narendrakumar-kumawat-474647257/" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="text-white hover:underline"
+        >
+          Narendrakumar Kumawat
+        </a>
       </p>
     </div>
   );

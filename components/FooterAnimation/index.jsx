@@ -4,10 +4,10 @@ import { useState, useEffect } from "react";
 import styles from "./index.module.css";
 
 const images = [
-  "/footer/img1.svg",
-  "/footer/img2.svg",
-  "/footer/img3.svg",
-  "/footer/img4.svg",
+  "/footer/image1.svg",
+  "/footer/image2.svg",
+  "/footer/image3.svg",
+  "/footer/image4.svg",
 ];
 
 export default function FooterAnimation() {
