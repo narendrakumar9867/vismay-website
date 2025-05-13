@@ -3,7 +3,6 @@
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import Image from "next/image";
 import {
   HomeIcon,
   PhotoIcon,
@@ -91,23 +90,8 @@ export default function Navbar() {
         </div>
       </nav>
 
-      <a
-      id="GMC-Miraj"
-      className="fixed top-6 right-6 z-50 w-[120px] min-w-[100px]"  // <-- Increased width
-      href="https://www.gmcmiraj.edu.in/"
-      target="_blank"
-     >
-      <Image
-        src="/gmc miraj logo.png"
-        alt="vismay logo"
-        width={160} // <-- Optional: also increase this
-        height={80}
-        className="w-full hover:scale-110 transition-all duration-300 ease-in-out"
-      />
-     </a>
-
       {/* Mobile Hamburger */}
-      <div className="fixed top-6 right-6 xl:hidden flex items-center justify-end z-50">
+      <div className="fixed top-12 left-3 xl:hidden flex items-center justify-start z-50">
         <button
           id="menu-btn"
           aria-label="Toggle Menu"
@@ -125,22 +109,35 @@ export default function Navbar() {
       {/* Mobile Menu */}
       <div
         id="menu"
-        className={`fixed inset-0 z-40 min-h-screen py-1 pt-16 px-8 backdrop-blur-lg transition-all duration-300 bg-[#090909cc] 
+        className={`fixed inset-0 z-40 min-h-screen py-1 pt-16 px-8 backdrop-blur-lg 
+          transition-all duration-300 bg-[#090909cc] flex justify-left items-start 
           ${isMenuOpen ? "block" : "hidden"}`}
       >
         <div
-          className="flex flex-col self-end space-y-8 text-lg text-[#9d9d9d] 
-            font-medium uppercase p-8 border-1 border-[#222] rounded-[2rem] 
+          className="flex flex-col space-y-8 text-lg text-[#9d9d9d] 
+            font-medium uppercase p-8 border border-[#222] rounded-[2rem] 
             bg-[#090909] bg-opacity-80"
         >
-          {navigationItems.map(({ label, href }) => (
+          {navigationItems.map(({ label, href, icon: Icon }) => (
             <Link
               href={href}
               key={label}
-              className="hover:text-[#F5F5F5]"
+              className="w-full"
               onClick={() => setMenuOpen(false)}
             >
-              {label}
+              <div
+                className={`group relative flex items-left gap-4 p-3 rounded-2xl 
+                  transition-all duration-300 ease-in-out 
+                  text-white shadow-md hover:bg-gradient-to-r from-[#ffffff14] to-[#ffffff0a]`}
+                style={{
+                  backdropFilter: "blur(10px)",
+                  WebkitBackdropFilter: "blur(10px)",
+                  background: "#ffffff0a",
+                }}
+              >
+                <Icon className="w-6 h-6 text-white" />
+                <p className="whitespace-nowrap text-base font-semibold">{label}</p>
+              </div>
             </Link>
           ))}
         </div>

@@ -350,8 +350,8 @@ export default function Team() {
           </TabsContent>
         </Tabs>
       </div>
-      <div className="relative bg-black w-full h-screen flex flex-col justify-end pt-48 md:pt-52 lg:pt-72">
-        <div className="flex flex-col md:flex-row justify-between items-center gap-16 md:gap-20 px-6 md:px-12 xl:px-24 py-20">
+
+        <div className="flex flex-col bg-black md:flex-row justify-between items-center gap-16 md:gap-20 px-6 md:px-12 xl:px-24 py-20">
           
           <p className="max-w-4xl text-6xl md:text-7xl lg:text-8xl xl:text-[9rem] font-extrabold leading-tight text-center md:text-left tracking-tight">
             <span 
@@ -392,9 +392,8 @@ export default function Team() {
             </span>
           </p>
 
-          <FooterAnimation />
+          {/* <FooterAnimation /> */}
         </div>
-      </div>
       <Footer />
     </>
   );

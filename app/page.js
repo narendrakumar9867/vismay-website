@@ -68,14 +68,14 @@ const Countdown = () => {
       className="text-center text-[#FAF8ED]"
     >
       <p className="text-lg font-medium">Event starts in:</p>
-      <div className="flex justify-center gap-4 mt-4">
+      <div className="flex flex-wrap justify-center gap-4 mt-4 px-2 sm:px-0">
         {["Days", "Hours", "Minutes", "Seconds"].map((label, index) => (
           <motion.div
             key={label}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: index * 0.2 }}
-            className="bg-[#FAF8ED] text-black px-6 py-2 rounded-lg"
+            className="bg-[#FAF8ED] text-black px-4 py-2 rounded-lg min-w-[70px] text-center"
           >
             {Object.values(timeLeft)[index]} <span className="block text-sm">{label}</span>
           </motion.div>
@@ -84,11 +84,6 @@ const Countdown = () => {
     </motion.div>
   );
 };
-
-
-
-
-
 
 export default function Home() {
   const aboutData = [
@@ -129,12 +124,26 @@ College life is more than just lectures and textbooks — it's about finding bal
       <div className="relative z-10">
         <Navbar />
 
-        <div className="w-full text-center py-4 bg-[#101010]/70 z-10 relative">
-          <h3 className="text-2xl md:text-3xl lg:text-3xl font-bold text-[#FAF8ED] tracking-wide">
+        <div className="w-full flex justify-between items-center px-6 md:px-12 py-4 bg-[#101010]/70 z-10 relative pl-14">
+          <h3 className="text-lg md:text-2xl lg:text-3xl font-bold text-[#FAF8ED] tracking-wide text-center flex-1">
             GOVERNMENT MEDICAL COLLEGE AND HOSPITAL,
+            <br className="hidden md:block" />
             MIRAJ AND PVPGH SANGLI
           </h3>
+
+          <a
+            id="GMC-Miraj"
+            href="https://www.gmcmiraj.edu.in/"
+            target="_blank"
+          >
+          <img
+              src="/gmc miraj logo.png"
+              alt="college logo"
+              className="w-16 h-16 md:w-20 md:h-20 ml-4"
+          />
+          </a>
         </div>
+
 
         <CustomizedButtons />
         
@@ -186,7 +195,6 @@ College life is more than just lectures and textbooks — it's about finding bal
             </motion.div>
           </div>
         </div>
-        <div className="relative bg-black w-full h-screen flex flex-col justify-end pt-48 md:pt-52 lg:pt-72">
           <div className="flex flex-col md:flex-row justify-between items-center gap-16 md:gap-20 px-6 md:px-12 xl:px-24 py-20">
 
             <p className="max-w-4xl text-6xl md:text-7xl lg:text-8xl xl:text-[9rem] font-extrabold leading-tight text-center md:text-left tracking-tight">
@@ -229,7 +237,6 @@ College life is more than just lectures and textbooks — it's about finding bal
             </p>
 
           </div>
-        </div>
         <Footer />
       </div>
     </div>

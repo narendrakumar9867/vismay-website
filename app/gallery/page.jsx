@@ -46,17 +46,17 @@ const Gallery = () => {
         <GridImage />
 
         <div className="my-12 flex justify-center">
-  <div className="w-[300px] h-[500px] md:w-[400px] md:h-[600px] overflow-hidden rounded-xl shadow-lg">
-    <video
-      src="/galleryPage/Reel1.mp4"
-      controls
-      autoPlay
-      loop
-      muted
-      className="w-full h-full object-cover"
-    />
-  </div>
-</div>
+          <div className="w-[300px] h-[500px] md:w-[400px] md:h-[600px] overflow-hidden rounded-xl shadow-lg">
+            <video
+              src="/galleryPage/insta_video.mp4"
+              controls
+              autoPlay
+              loop
+              muted
+              className="w-full h-full object-cover"
+            />
+          </div>
+        </div>
 
         <div className="flex flex-col justify-center items-center my-4 xl:my-8">
           <div
@@ -76,8 +76,7 @@ const Gallery = () => {
         </div>
       </div>
 
-      <div className="relative bg-black w-full h-screen flex flex-col justify-end pt-48 md:pt-52 lg:pt-72">
-        <div className="flex flex-col md:flex-row justify-between items-center gap-16 md:gap-20 px-6 md:px-12 xl:px-24 py-20">
+        <div className="flex flex-col bg-black md:flex-row justify-between items-center gap-16 md:gap-20 px-6 md:px-12 xl:px-24 py-20">
           <p className="max-w-4xl text-6xl md:text-7xl lg:text-8xl xl:text-[9rem] font-extrabold leading-tight text-center md:text-left tracking-tight">
             <span
               className="block bg-clip-text text-transparent drop-shadow-[0_0_15px_rgba(255,215,0,0.6)]"
@@ -117,10 +116,8 @@ const Gallery = () => {
             </span>
           </p>
 
-          <FooterAnimation />
+          {/* <FooterAnimation /> */}
         </div>
-      </div>
-
       <Footer />
     </>
   );

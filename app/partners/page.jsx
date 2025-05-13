@@ -222,27 +222,47 @@ partners play a pivotal role in making Vismay a grand success
         </Tabs>
       </div>
 
-      <div className="relative bg-black w-full h-screen flex flex-col justify-end pt-48 md:pt-52 lg:pt-72 px-6 md:px-12 xl:px-24">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-16 md:gap-20 py-20">
-              <p className="max-w-4xl text-6xl md:text-7xl lg:text-8xl xl:text-[9rem] font-extrabold leading-tight text-center md:text-left tracking-tight">
-                {["Myth", "Maya", "Mystery!"].map((word, i) => (
-                  <span
-                      key={i}
-                      className="block bg-clip-text text-transparent drop-shadow-[0_0_15px_rgba(255,215,0,0.6)]"
-                      style={{
-                      backgroundImage: "url('/mmm background.jpg')",
-                      backgroundSize: "cover",
-                      backgroundPosition: "center",
-                      filter: "brightness(1.4)",
-                      WebkitTextStroke: "1px #f5deb3",
-                    }}
-                  >
-                  {word}
-                  </span>
-                ))}
-              </p>
-            <FooterAnimation />
-          </div>
+      <div className="flex flex-col bg-black md:flex-row justify-between items-center gap-16 md:gap-20 px-6 md:px-12 xl:px-24 py-20">
+          <p className="max-w-4xl text-6xl md:text-7xl lg:text-8xl xl:text-[9rem] font-extrabold leading-tight text-center md:text-left tracking-tight">
+            <span
+              className="block bg-clip-text text-transparent drop-shadow-[0_0_15px_rgba(255,215,0,0.6)]"
+              style={{
+                backgroundImage: "url('/mmm background.jpg')",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                filter: "brightness(1.4)",
+                WebkitTextStroke: "1px #f5deb3",
+              }}
+            >
+              Myth
+            </span>
+            <span
+              className="block bg-clip-text text-transparent drop-shadow-[0_0_15px_rgba(255,215,0,0.6)]"
+              style={{
+                backgroundImage: "url('/mmm background.jpg')",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                filter: "brightness(1.4)",
+                WebkitTextStroke: "1px #f5deb3",
+              }}
+            >
+              Maya
+            </span>
+            <span
+              className="block bg-clip-text text-transparent drop-shadow-[0_0_15px_rgba(255,215,0,0.6)]"
+              style={{
+                backgroundImage: "url('/mmm background.jpg')",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                filter: "brightness(1.4)",
+                WebkitTextStroke: "1px #f5deb3",
+              }}
+            >
+              Mystery!
+            </span>
+          </p>
+
+          {/* <FooterAnimation /> */}
         </div>
       <Footer />
     </div>
