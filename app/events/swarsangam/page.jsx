@@ -27,33 +27,25 @@ const EventSwarsangamPage = () => {
   return (
     <>
       <Navbar />
-      <div
-        className="relative min-h-screen px-6 py-12 text-white overflow-x-hidden"
-        style={{
-          backgroundImage: "url('/background_image.jpg')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "repeat",
-        }} 
-      >
+      <div className="px-6 py-12 bg-black text-white" >
 
         { /* Header */}
         <div className="pt-12 pb-8 text-center px-4 md:px-12">
           <h1 className="text-4xl md:text-5xl font-bold">
-            <span className="text-blue-500">SWARSANGAM,</span> Singing Competition.
+            <span className="text-yellow-500">SWARSANGAM,</span> Singing Competition.
           </h1>
-          <p className="text-black max-w-3xl mx-auto mt-4 text-lg font-semibold">
+          <p className="text-white max-w-3xl mx-auto mt-4 text-lg font-semibold">
             🎤 Got a voice that can steal hearts or light up the stage?
             Then don't hold back — it's your time to shine! Whether it's high notes or heartfelt melodies, let the world hear your song. Step up to the mic and let your voice do the magic…
           </p>
         </div>
         
       <div className="max-w-4xl mx-auto space-y-6">
-        <h2 className="text-2xl font-semibold text-blue-500 mt-6">1. SOLO SINGING</h2>
+        <h2 className="text-2xl font-semibold text-yellow-500 mt-6">1. SOLO SINGING</h2>
 
         <div className="space-y-4">
-          <h3 className="text-xl font-semibold text-blue-400">• RULES:</h3>
-          <ul className="list-disc list-inside text-black space-y-1 font-semibold">
+          <h3 className="text-xl font-semibold text-yellow-400">• RULES:</h3>
+          <ul className="list-disc list-inside text-white space-y-1 font-semibold">
             <li>Time limit: 01:30 to 3 minutes</li>
             <li>Derogatory language is strictly prohibited</li>
             <li>Use of mobile or electronic devices for lyrics is strictly prohibited</li>
@@ -78,11 +70,11 @@ const EventSwarsangamPage = () => {
           </p>
         </div>
 
-        <h2 className="text-2xl font-semibold text-blue-500 mt-6">2. DUET SINGING</h2>
+        <h2 className="text-2xl font-semibold text-yellow-500 mt-6">2. DUET SINGING</h2>
 
         <div className="space-y-4">
-          <h3 className="text-xl font-semibold text-blue-400">• RULES:</h3>
-          <ul className="list-disc list-inside text-black space-y-1 font-semibold">
+          <h3 className="text-xl font-semibold text-yellow-400">• RULES:</h3>
+          <ul className="list-disc list-inside text-white space-y-1 font-semibold">
             <li>Time limit: 3 to 4 minutes</li>
             <li>Derogatory language is strictly prohibited</li>
             <li>Use of mobile or electronic devices for lyrics is strictly prohibited</li>
@@ -110,7 +102,7 @@ const EventSwarsangamPage = () => {
         </div>
         <div className="mt-10">
           <Link href="/events">
-            <button className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-6 py-3 rounded-lg transition">
+            <button className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-6 py-3 rounded-xl transition">
               ← Back to Events
             </button>
           </Link>

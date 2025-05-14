@@ -11,7 +11,7 @@ export default function Contact() {
   return (
     <>
       <Navbar />
-      <div className="bg-[#101010] flex flex-col min-h-screen p-4 md:pb-64 lg:px-0 md:pt-24 pt-16">
+      <div className="bg-[#101010] flex flex-col min-h-screen p-4 md:pb-64 lg:px-0 md:pt-24 pt-12">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}

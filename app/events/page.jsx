@@ -96,12 +96,12 @@ const EventsPage = () => {
       <Navbar />
       <div className="bg-[#000000] text-white min-h-screen">
         {/* Header */}
-        <div className="pt-32 pb-16 text-center px-4 md:px-12">
+        <div className="pt-12 pb-16 text-center px-4 md:px-12">
           <h1 className="text-5xl md:text-7xl font-bold">
-            <span className="text-blue-500">Vismay</span> Events.
+            <span className="text-yellow-500">Vismay</span> Events.
           </h1>
           <p className="text-gray-400 max-w-3xl mx-auto mt-4 text-lg">
-            Relive the magic of Vismay at GMCMirag—explore unforgettable moments, vibrant snapshots, and the spirit of celebration that brings our cultural community together.
+            Relive the magic of Vismay at Goverment Medical College and Hospital, Mirag—explore unforgettable moments, vibrant snapshots, and the spirit of celebration that brings our cultural community together.
           </p>
         </div>
 
@@ -111,7 +111,7 @@ const EventsPage = () => {
             href="https://drive.google.com/uc?export=download&id=1gWFHpZ-DY-jAH8-wi4ydNooCXLK3woni"
             download="Events_Brochure.pdf"
           >
-            <button className="backdrop-blur-md bg-blue-500/30 hover:bg-blue-500/50 border border-blue-300 text-white text-sm px-8 py-3 rounded-xl shadow-lg hover:shadow-blue-500/40 transition duration-300 ease-in-out transform hover:scale-105 font-medium flex items-center space-x-2">
+            <button className="backdrop-blur-md bg-yellow-700 hover:bg-yellow-500/50 border border-yellow-300 text-white text-sm px-8 py-3 rounded-xl shadow-lg hover:shadow-yellow-500/40 transition duration-300 ease-in-out transform hover:scale-105 font-medium flex items-center space-x-2">
               <span className="text-lg">📖</span>
               <span>Events Brochure</span>
             </button>

@@ -27,33 +27,25 @@ const EventRunwayrendezvousPage = () => {
   return (
     <>
       <Navbar />
-      <div
-        className="relative min-h-screen px-6 py-12 text-white overflow-x-hidden"
-        style={{
-          backgroundImage: "url('/background_image.jpg')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "repeat",
-        }}  
-      >
+      <div className="px-6 py-12 bg-black text-white" >
 
         { /* Header */}
         <div className="pt-12 pb-8 text-center px-4 md:px-12">
           <h1 className="text-4xl md:text-5xl font-bold">
-            <span className="text-blue-500">RUNWAY RENDEZVOUS,</span> Fashion show.
+            <span className="text-yellow-500">RUNWAY RENDEZVOUS,</span> Fashion show.
           </h1>
-          <p className="text-black max-w-3xl mx-auto mt-4 text-lg font-semibold">
+          <p className="text-white max-w-3xl mx-auto mt-4 text-lg font-semibold">
             👠 Got the style, the swagger, and a story to tell?
             Then own the runway! Whether it’s bold themes or fierce attitude, let your confidence light up the stage. Step out, strike a pose, and let your fashion do the talking…
           </p>
         </div>
         
       <div className="max-w-4xl mx-auto space-y-6">
-        <h2 className="text-2xl font-semibold text-blue-500 mt-6">Fashion show</h2>
+        <h2 className="text-2xl font-semibold text-yellow-500 mt-6">Fashion show</h2>
 
         <div className="space-y-4">
-          <h3 className="text-xl font-semibold text-blue-400">• RULES:</h3>
-          <ul className="list-disc list-inside text-black space-y-1 font-semibold">
+          <h3 className="text-xl font-semibold text-yellow-400">• RULES:</h3>
+          <ul className="list-disc list-inside text-white space-y-1 font-semibold">
             <li>There will be only one round</li>
             <li>The teams will perform according to their pre-decided choreography.</li>
             <li>The participants will be judged based on their walk, pose, confidence, attitude, and the presentation of the theme.</li>
@@ -75,7 +67,7 @@ const EventRunwayrendezvousPage = () => {
         </div>
         <div className="mt-10">
           <Link href="/events">
-            <button className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-6 py-3 rounded-lg transition">
+            <button className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-6 py-3 rounded-xl transition">
               ← Back to Events
             </button>
           </Link>

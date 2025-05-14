@@ -27,33 +27,25 @@ const EventVadyavishwaPage = () => {
   return (
     <>
       <Navbar />
-      <div
-        className="relative min-h-screen px-6 py-12 text-white overflow-x-hidden"
-        style={{
-          backgroundImage: "url('/background_image.jpg')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "repeat",
-        }} 
-      >
+      <div className="px-6 py-12 bg-black text-white">
 
         { /* Header */}
         <div className="pt-12 pb-8 text-center px-4 md:px-12">
           <h1 className="text-4xl md:text-5xl font-bold">
-            <span className="text-blue-500">VADYAVISHWA,</span> Music competition.
+            <span className="text-yellow-500">VADYAVISHWA,</span> Music competition.
           </h1>
-          <p className="text-black max-w-3xl mx-auto mt-4 text-lg font-semibold">
+          <p className="text-white max-w-3xl mx-auto mt-4 text-lg font-semibold">
             🎶 Feel the rhythm? Got music running through your veins?
             Then let the strings sing, the drums roar, and the keys dance! Whether you're a band, a solo artist, or an instrumentalist, the stage is yours to create magic. Show us the power of your sound and let your music speak louder than words...
           </p>
         </div>
         
       <div className="max-w-4xl mx-auto space-y-6">
-        <h2 className="text-2xl font-semibold text-blue-500 mt-6">1. BATTLE OF BANDS</h2>
+        <h2 className="text-2xl font-semibold text-yellow-500 mt-6">1. BATTLE OF BANDS</h2>
 
         <div className="space-y-4">
-          <h3 className="text-xl font-semibold text-blue-400">• RULES:</h3>
-          <ul className="list-disc list-inside text-black space-y-1 font-semibold">
+          <h3 className="text-xl font-semibold text-yellow-400">• RULES:</h3>
+          <ul className="list-disc list-inside text-white space-y-1 font-semibold">
             <li>Time limit: 25 to 30 minutes.</li>
             <li>Derogatory language is strictly prohibited.</li>
             <li>Only one entry is allowed per band.</li>
@@ -70,10 +62,10 @@ const EventVadyavishwaPage = () => {
             • Winners will be awarded with trophies and attractive prizes.
           </p>
 
-          <h2 className="text-2xl font-semibold text-blue-500 mt-6">2. INSTRUMENTALS</h2>
+          <h2 className="text-2xl font-semibold text-yellow-500 mt-6">2. INSTRUMENTALS</h2>
 
-          <h3 className="text-xl font-semibold text-blue-400">• RULES:</h3>
-          <ul className="list-disc list-inside text-black space-y-1 font-semibold">
+          <h3 className="text-xl font-semibold text-yellow-400">• RULES:</h3>
+          <ul className="list-disc list-inside text-white space-y-1 font-semibold">
             <li>Time limit: 4 to 5 minutes (including instruments checking and set up)</li>
             <li>Max no. of participants: 3</li>
             <li>Participants to bring their own instruments.</li>
@@ -91,7 +83,7 @@ const EventVadyavishwaPage = () => {
         </div>
         <div className="mt-10">
           <Link href="/events">
-            <button className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-6 py-3 rounded-lg transition">
+            <button className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-6 py-3 rounded-xl transition">
               ← Back to Events
             </button>
           </Link>

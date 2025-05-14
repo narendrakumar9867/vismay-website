@@ -27,22 +27,14 @@ const EventAntarnaadPage = () => {
   return (
     <>
       <Navbar />
-      <div 
-        className="relative min-h-screen px-6 py-12 text-white overflow-x-hidden"
-        style={{
-          backgroundImage: "url('/background_image.jpg')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "repeat",
-        }}
-      >
+      <div className="px-6 py-12 bg-black text-white">
 
         { /* Header */}
         <div className="pt-12 pb-8 text-center px-4 md:px-12">
           <h1 className="text-4xl md:text-5xl font-bold">
-            <span className="text-blue-500">ANTARNAAD,</span> Open mic competition.
+            <span className="text-yellow-500">ANTARNAAD,</span> Open mic competition.
           </h1>
-          <p className="text-black max-w-3xl mx-auto mt-4 text-lg font-semibold">
+          <p className="text-white max-w-3xl mx-auto mt-4 text-lg font-semibold">
             Are you talented? But not getting a platform, worry not. Be confident,
             hold the mic and showcase your talent in the open mic. Let the voice
             of your mind be heard...
@@ -51,8 +43,8 @@ const EventAntarnaadPage = () => {
         
       <div className="max-w-4xl mx-auto space-y-6">
         <div className="space-y-4">
-          <h3 className="text-xl font-semibold text-blue-400">• RULES:</h3>
-          <ul className="list-disc list-inside text-black space-y-1 font-semibold">
+          <h3 className="text-xl font-semibold text-yellow-500">• RULES:</h3>
+          <ul className="list-disc list-inside text-white space-y-1 font-semibold">
             <li>Time limit: 1-2 minutes</li>
             <li>Language: Hindi, Marathi or English</li>
             <li>The participant can select any genre</li>
@@ -62,7 +54,7 @@ const EventAntarnaadPage = () => {
             <li>Participants must report to the venue at informed time</li>
             <li>Any breach of rules will lead to disqualification</li>
           </ul>
-          <h3 className="text-xl font-semibold text-blue-400 mt-6">Entry fees: ₹100/-</h3>
+          <h3 className="text-xl font-semibold text-yellow-500 mt-6">Entry fees: ₹100/-</h3>
           <p className="text-white font-semibold mt-4">
             • Winners will be awarded with trophies and attractive prizes.
           </p>

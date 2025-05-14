@@ -27,33 +27,25 @@ const EventnatyagandhaPage = () => {
   return (
     <>
       <Navbar />
-      <div
-        className="relative min-h-screen px-6 py-12 text-white overflow-x-hidden"
-        style={{
-          backgroundImage: "url('/background_image.jpg')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "repeat",
-        }} 
-      >
+      <div className="px-6 py-12 bg-black text-white">
 
         { /* Header */}
         <div className="pt-12 pb-8 text-center px-4 md:px-12">
           <h1 className="text-4xl md:text-5xl font-bold">
-            <span className="text-blue-500">NATYAGANDH,</span> Drama Competition.
+            <span className="text-yellow-500">NATYAGANDH,</span> Drama Competition.
           </h1>
-          <p className="text-black max-w-3xl mx-auto mt-4 text-lg font-semibold">
+          <p className="text-white max-w-3xl mx-auto mt-4 text-lg font-semibold">
             🎭 Got a flair for the dramatic and expressions that speak louder than words?
             Then step into the spotlight! Let your emotions roar, your characters shine, and your performance leave the audience spellbound. The stage is yours — own it!
           </p>
         </div>
         
       <div className="max-w-4xl mx-auto space-y-6">
-        <h2 className="text-2xl font-semibold text-blue-500 mt-6">1. SOLO</h2>
+        <h2 className="text-2xl font-semibold text-yellow-500 mt-6">1. SOLO</h2>
 
         <div className="space-y-4">
-          <h3 className="text-xl font-semibold text-blue-400">• RULES:</h3>
-          <ul className="list-disc list-inside text-black space-y-1 font-semibold">
+          <h3 className="text-xl font-semibold text-yellow-400">• RULES:</h3>
+          <ul className="list-disc list-inside text-white space-y-1 font-semibold">
             <li>Time limit: 3 to 5 minutes</li>
             <li>Language: Hindi, Marathi, English</li>
             <li>Above time limit includes setting up and clearing of stage</li>
@@ -66,8 +58,8 @@ const EventnatyagandhaPage = () => {
             </li>
           </ul>
 
-          <h3 className="text-xl font-semibold text-blue-400 mt-6">• JUDGING CRITERIA:</h3>
-          <ul className="list-disc list-inside text-black space-y-1 font-semibold">
+          <h3 className="text-xl font-semibold text-yellow-400 mt-6">• JUDGING CRITERIA:</h3>
+          <ul className="list-disc list-inside text-white space-y-1 font-semibold">
             <li>Acting (facial and body expressions)</li>
             <li>Content originality</li>
             <li>Screenplay</li>
@@ -80,11 +72,11 @@ const EventnatyagandhaPage = () => {
           </p>
         </div>
 
-        <h2 className="text-2xl font-semibold text-blue-500 mt-6">2. DUET</h2>
+        <h2 className="text-2xl font-semibold text-yellow-500 mt-6">2. DUET</h2>
 
         <div className="space-y-4">
-          <h3 className="text-xl font-semibold text-blue-400">• RULES:</h3>
-          <ul className="list-disc list-inside text-black space-y-1 font-semibold">
+          <h3 className="text-xl font-semibold text-yellow-400">• RULES:</h3>
+          <ul className="list-disc list-inside text-white space-y-1 font-semibold">
             <li>Time limit: 5 to 7 minutes</li>
             <li>Language: Hindi, Marathi, English</li>
             <li>Above time limit includes setting up and clearing of stage</li>
@@ -97,8 +89,8 @@ const EventnatyagandhaPage = () => {
             </li>
           </ul>
 
-          <h3 className="text-xl font-semibold text-blue-400 mt-6">• JUDGING CRITERIA:</h3>
-          <ul className="list-disc list-inside text-black space-y-1 font-semibold">
+          <h3 className="text-xl font-semibold text-yellow-400 mt-6">• JUDGING CRITERIA:</h3>
+          <ul className="list-disc list-inside text-white space-y-1 font-semibold">
             <li>Acting (facial and body expressions)</li>
             <li>Content originality</li>
             <li>Screenplay</li>
@@ -111,11 +103,11 @@ const EventnatyagandhaPage = () => {
           </p>
         </div>
 
-        <h2 className="text-2xl font-semibold text-blue-500 mt-6">3. GROUP</h2>
+        <h2 className="text-2xl font-semibold text-yellow-500 mt-6">3. GROUP</h2>
 
         <div className="space-y-4">
-          <h3 className="text-xl font-semibold text-blue-400">• RULES:</h3>
-          <ul className="list-disc list-inside text-black space-y-1 font-semibold">
+          <h3 className="text-xl font-semibold text-yellow-400">• RULES:</h3>
+          <ul className="list-disc list-inside text-white space-y-1 font-semibold">
             <li>Team size: Maximum 12 participants</li>
             <li>Time limit: 10 - 12 mins</li>
             <li>Language: Hindi, Marathi, English</li>
@@ -131,8 +123,8 @@ const EventnatyagandhaPage = () => {
             </li>
           </ul>
 
-          <h3 className="text-xl font-semibold text-blue-400 mt-6">• JUDGING CRITERIA:</h3>
-          <ul className="list-disc list-inside text-black space-y-1 font-semibold">
+          <h3 className="text-xl font-semibold text-yellow-400 mt-6">• JUDGING CRITERIA:</h3>
+          <ul className="list-disc list-inside text-white space-y-1 font-semibold">
             <li>Acting (facial and body expressions)</li>
             <li>Content originality</li>
             <li>Screenplay</li>
@@ -150,7 +142,7 @@ const EventnatyagandhaPage = () => {
 
         <div className="mt-10">
           <Link href="/events">
-            <button className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-6 py-3 rounded-lg transition">
+            <button className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-6 py-3 rounded-xl transition">
               ← Back to Events
             </button>
           </Link>

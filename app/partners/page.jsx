@@ -157,7 +157,7 @@ const Partners = () => {
       <Navbar />
       <div
         className="bg-[#101010] flex flex-col items-center min-h-screen 
-          px-6 md:px-16 lg:px-20 2xl:px-32 py-40"
+          px-6 md:px-16 lg:px-20 2xl:px-32 py-12"
       >
         <div className="flex flex-col items-center gap-4 mb-12">
           <p className="text-[#F5F0D8] text-[2rem] font-normal md:text-[5rem]">
@@ -168,9 +168,9 @@ const Partners = () => {
               className="w-full lg:max-w-[80%] text-[#C3C3C3] font-[Inter] 
                 text-center font-normal text-[1.25rem] md:text-[1.5rem]"
             >
-             We are proud to collaborate with visionary organizations that
-share our passion for creativity and excellence. These esteemed
-partners play a pivotal role in making Vismay a grand success
+            We are proud to collaborate with visionary organizations that
+            share our passion for creativity and excellence. These esteemed
+            partners play a pivotal role in making Vismay a grand success
             </p>
           </div>
         </div>

@@ -27,41 +27,33 @@ const EventKalavishkarPage = () => {
   return (
     <>
       <Navbar />
-      <div
-        className="relative min-h-screen px-6 py-12 text-white overflow-x-hidden"
-        style={{
-          backgroundImage: "url('/background_image.jpg')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "repeat",
-        }} 
-      >
+      <div className="px-6 py-12 bg-black text-white" >
 
         { /* Header */}
         <div className="pt-12 pb-8 text-center px-4 md:px-12">
           <h1 className="text-4xl md:text-5xl font-bold">
-            <span className="text-blue-500">KALAVISHKAAR,</span> DRAWING COMPETITION.
+            <span className="text-yellow-500">KALAVISHKAAR,</span> DRAWING COMPETITION.
           </h1>
-          <p className="text-black max-w-3xl mx-auto mt-4 text-lg font-semibold">
+          <p className="text-white max-w-3xl mx-auto mt-4 text-lg font-semibold">
             🎨 Got a vision that speaks louder than words?
             Then let your colors flow! Whether it's bold strokes or fine lines, bring your imagination to life and let your artwork tell a story. The canvas is waiting — make it unforgettable…
           </p>
         </div>
         
       <div className="max-w-4xl mx-auto space-y-6">
-        <h2 className="text-2xl font-semibold text-blue-500 mt-6">1. DRAWING COMPETITION</h2>
+        <h2 className="text-2xl font-semibold text-yellow-500 mt-6">1. DRAWING COMPETITION</h2>
 
         <div className="space-y-4">
-            <h3 className="text-xl font-semibold text-blue-400">• Details:</h3>
-            <ul className="list-disc list-inside text-black space-y-1 font-semibold">
+            <h3 className="text-xl font-semibold text-yellow-400">• Details:</h3>
+            <ul className="list-disc list-inside text-white space-y-1 font-semibold">
                 <li>Open for all UGs, Interns, and PGs</li>
                 <li>Participant is free to use any medium of drawing (acrylics, watercolours, poster colours, crayons, etc.)</li>
                 <li>Sketches are also welcomed</li>
                 <li>Theme: <strong>‘Myth, Maya, Mystery’</strong></li>
             </ul>
 
-            <h3 className="text-xl font-semibold text-blue-400">• Rules:</h3>
-            <ul className="list-disc list-inside text-black space-y-1 font-semibold">
+            <h3 className="text-xl font-semibold text-yellow-400">• Rules:</h3>
+            <ul className="list-disc list-inside text-white space-y-1 font-semibold">
                 <li>Participants should send a minimum of 2 photos of the drawing in PDF or JPEG format</li>
                 <li>All photos should be mailed to: vismaydrawing@gmail.com</li>
                 <li>A special caption is required: Why is your drawing theme appropriate?</li>
@@ -69,8 +61,8 @@ const EventKalavishkarPage = () => {
                 <li>Last date of submission: 15 May</li>
             </ul>
 
-          <h3 className="text-xl font-semibold text-blue-400">• Judging criteria:</h3>
-          <ul className="list-disc list-inside text-black space-y-1 font-semibold">
+          <h3 className="text-xl font-semibold text-yellow-400">• Judging criteria:</h3>
+          <ul className="list-disc list-inside text-white space-y-1 font-semibold">
             <li>Interpretation and the clarity of the theme to the viewer</li>
             <li>Creativity and originality of the depicted theme</li>
             <li>Quality of artistic composition and overall design based on the theme</li>
@@ -83,11 +75,11 @@ const EventKalavishkarPage = () => {
           </p>
         </div>
 
-        <h2 className="text-2xl font-semibold text-blue-500 mt-6">2. PHOTOGRAPHY</h2>
+        <h2 className="text-2xl font-semibold text-yellow-500 mt-6">2. PHOTOGRAPHY</h2>
 
         <div className="space-y-4">
-            <h3 className="text-xl font-semibold text-blue-400">• Details:</h3>
-            <ul className="list-disc list-inside text-black space-y-1 font-semibold">
+            <h3 className="text-xl font-semibold text-yellow-400">• Details:</h3>
+            <ul className="list-disc list-inside text-white space-y-1 font-semibold">
                 <li>Open for all UGs, INTERNS, and PGs</li>
                 <li>Type/Genre of pictures (street, wildlife, etc.) is the complete choice of the participant</li>
                 <li>Special caption required: Why did you decide to capture the said image?</li>
@@ -99,15 +91,15 @@ const EventKalavishkarPage = () => {
                 Disqualification.
             </p>
 
-            <h3 className="text-xl font-semibold text-blue-400">• Rules:</h3>
-            <ul className="list-disc list-inside text-black space-y-1 font-semibold">
+            <h3 className="text-xl font-semibold text-yellow-400">• Rules:</h3>
+            <ul className="list-disc list-inside text-white space-y-1 font-semibold">
                 <li>Minimum 2 photos of the category participants are participating in</li>
                 <li>All photos should be sent to the given email address in PDF or JPEG format. Email id: <strong>gmcmvismay@gmail.com</strong></li>
                 <li>Judge's decision will be final</li>
             </ul>
 
-          <h3 className="text-xl font-semibold text-blue-400">• Judging criteria:</h3>
-          <ul className="list-disc list-inside text-black space-y-1 font-semibold">
+          <h3 className="text-xl font-semibold text-yellow-400">• Judging criteria:</h3>
+          <ul className="list-disc list-inside text-white space-y-1 font-semibold">
             <li>Its impact</li>
             <li>The lighting</li>
             <li>The story it tells</li>
@@ -125,7 +117,7 @@ const EventKalavishkarPage = () => {
 
         <div className="mt-10">
           <Link href="/events">
-            <button className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-6 py-3 rounded-lg transition">
+            <button className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-6 py-3 rounded-xl transition">
               ← Back to Events
             </button>
           </Link>

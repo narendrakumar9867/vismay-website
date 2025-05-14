@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { motion } from "framer-motion";
+import Link from "next/link";
 // import FooterAnimation from "@/components/FooterAnimation";
 // import { Environment, OrbitControls } from '@react-three/drei';
 // import { Canvas } from '@react-three/fiber';
@@ -124,30 +125,45 @@ College life is more than just lectures and textbooks — it's about finding bal
       <div className="relative z-10">
         <Navbar />
 
-        <div className="w-full flex justify-between items-center px-6 md:px-12 py-4 bg-[#101010]/70 z-10 relative pl-14">
-          <h3 className="text-lg md:text-2xl lg:text-3xl font-bold text-[#FAF8ED] tracking-wide text-center flex-1">
-            GOVERNMENT MEDICAL COLLEGE AND HOSPITAL,
-            <br className="hidden md:block" />
-            MIRAJ AND PVPGH SANGLI
-          </h3>
 
-          <a
-            id="GMC-Miraj"
-            href="https://www.gmcmiraj.edu.in/"
-            target="_blank"
-          >
-          <img
-              src="/gmc miraj logo.png"
-              alt="college logo"
-              className="w-16 h-16 md:w-20 md:h-20 ml-4"
-          />
-          </a>
+        <div className="w-full flex flex-row items-center justify-between px-12 pl-14 pr-5 py-6 bg-transparent">
+          <div className="text-white text-center flex-1">
+            <h3 className="text-sm md:text-sm lg:text-2xl font-serif font-extrabold leading-tight tracking-wide">
+              GOVERNMENT MEDICAL COLLEGE AND HOSPITAL, <br className="hidden sm:block" />
+              MIRAJ AND PVPGH SANGLI
+            </h3>
+          </div>
+
+          <div className="flex-shrink-0 ml-4">
+            <a
+              id="GMC-Miraj"
+              href="https://www.gmcmiraj.edu.in/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="/gmc miraj logo.png"
+                alt="college logo"
+                className="w-14 h-14 md:w-20 md:h-20"
+              />
+            </a>
+          </div>
         </div>
 
+        <div className="pt-20 md:pt-32 pb-2 px-10 md:px-10 flex justify-center ">
+          <Link
+            href="https://drive.google.com/uc?export=download&id=1gWFHpZ-DY-jAH8-wi4ydNooCXLK3woni"
+            download="Events_Brochure.pdf"
+          >
+            <button className="backdrop-blur-md bg-gray-500/30 hover:bg-gray-500/50 border border-yellow-300 text-white text-sm px-8 py-3 rounded-xl shadow-lg hover:shadow-yellow-500/40 transition duration-300 ease-in-out transform hover:scale-105 font-medium flex items-center space-x-2">
+              <span>Events Brochure</span>
+            </button>
+          </Link>
+        </div>
 
         <CustomizedButtons />
         
-        <div className="relative flex flex-col min-h-fit p-4 pt-20 md:pt-32 md:px-12 xl:px-20 md:py-4">
+        <div className="relative flex flex-col min-h-fit p-4 pt-5 md:pt-5 md:px-12 xl:px-20 md:py-4">
           {/* <div className="flex justify-center items-center w-full py-16">
             {modelAnimation()}
           </div> */}
