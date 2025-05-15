@@ -160,7 +160,7 @@ const Partners = () => {
           px-6 md:px-16 lg:px-20 2xl:px-32 py-12"
       >
         <div className="flex flex-col items-center gap-4 mb-12">
-          <p className="text-[#F5F0D8] text-[2rem] font-normal md:text-[5rem]">
+          <p className="text-[#FDE9A3] text-[2rem] font-normal md:text-[5rem]">
             Partners
           </p>
           <div className="flex flex-col items-center gap-3 md:gap-4">

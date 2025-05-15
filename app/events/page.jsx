@@ -98,7 +98,7 @@ const EventsPage = () => {
         {/* Header */}
         <div className="pt-12 pb-16 text-center px-4 md:px-12">
           <h1 className="text-5xl md:text-7xl font-bold">
-            <span className="text-yellow-500">Vismay</span> Events.
+            <span className="text-[#FDE9A3]">Vismay</span> Events.
           </h1>
           <p className="text-gray-400 max-w-3xl mx-auto mt-4 text-lg">
             Relive the magic of Vismay at Goverment Medical College and Hospital, Mirag—explore unforgettable moments, vibrant snapshots, and the spirit of celebration that brings our cultural community together.
@@ -106,14 +106,13 @@ const EventsPage = () => {
         </div>
 
         {/* events brochure */}
-        <div className="pt-8 pb-20 px-4 md:px-8 flex justify-center ">
+        <div className="pt-8 pb-20 px-4 md:px-8 flex justify-center">
           <Link
             href="https://drive.google.com/uc?export=download&id=1gWFHpZ-DY-jAH8-wi4ydNooCXLK3woni"
             download="Events_Brochure.pdf"
           >
-            <button className="backdrop-blur-md bg-yellow-700 hover:bg-yellow-500/50 border border-yellow-300 text-white text-sm px-8 py-3 rounded-xl shadow-lg hover:shadow-yellow-500/40 transition duration-300 ease-in-out transform hover:scale-105 font-medium flex items-center space-x-2">
-              <span className="text-lg">📖</span>
-              <span>Events Brochure</span>
+            <button className="text-white font-semibold text-base px-8 py-3 border border-white rounded-full bg-transparent hover:bg-[#FDE9A3] hover:text-black active:bg-[#FDE9A3] transition duration-300 ease-in-out">
+              Event Broucher
             </button>
           </Link>
         </div>
@@ -138,25 +137,21 @@ const EventsPage = () => {
               {/* Buttons Section */}
               <div className="flex justify-between mt-4">
                 <Link href={event.link1}>
-                  <button className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white text-sm px-6 py-3 rounded-md transform transition duration-300 hover:scale-105">
-                    <strong>
-                      <span className="mr-2">🔍</span> Know More
-                    </strong>
+                  <button className="flex items-center backdrop-blur-md bg-transparent hover:bg-[#FDE9A3] border border-white text-white text-sm px-8 py-3 rounded-xl shadow-transparent hover:text-black hover:shadow-[#FDE9A3] transition duration-300 ease-in-out transform hover:scale-105 font-normal space-x-2">
+                    <span className="mr-2">🔍</span>
+                    <strong>Know More</strong>
                   </button>
                 </Link>
+
                 <Link href={event.link2}>
-                  <button className="bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-black text-sm px-6 py-3 rounded-md transform transition duration-300 hover:scale-105">
-                    <strong>
-                      <span className="mr-2">📝</span> Register
-                    </strong>
+                  <button className="flex items-center backdrop-blur-md bg-[#FDE9A3] hover:bg-[#FDE9A3] border border-white text-black text-sm px-8 py-3 rounded-xl shadow-transparent hover:shadow-[#FDE9A3] transition duration-300 ease-in-out transform hover:scale-105 font-normal space-x-2">
+                    <span className="mr-2">📝</span>
+                    <strong>Register</strong>
                   </button>
                 </Link>
               </div>
-
-              
             </div>
           ))}
-          
         </div>
 
         <div className="flex flex-col bg-black md:flex-row justify-between items-center gap-16 md:gap-20 px-6 md:px-12 xl:px-24 py-20">

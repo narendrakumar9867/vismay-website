@@ -32,7 +32,7 @@ const EventnatyarangPage = () => {
         { /* Header */}
         <div className="pt-12 pb-8 text-center px-4 md:px-12">
           <h1 className="text-4xl md:text-5xl font-bold">
-            <span className="text-yellow-500">NATYARANG,</span> Drama Competition.
+            <span className="text-[#FDE9A3]">NATYARANG,</span> Drama Competition.
           </h1>
           <p className="text-white max-w-3xl mx-auto mt-4 text-lg font-semibold">
             Is your group full of drama kings and queens? Then why waste such a
@@ -42,10 +42,10 @@ const EventnatyarangPage = () => {
         </div>
         
       <div className="max-w-4xl mx-auto space-y-6">
-        <h2 className="text-2xl font-semibold text-yellow-500 mt-6">1. SOLO</h2>
+        <h2 className="text-2xl font-semibold text-[#FDE9A3] mt-6">1. SOLO</h2>
 
         <div className="space-y-4">
-          <h3 className="text-xl font-semibold text-yellow-400">• RULES:</h3>
+          <h3 className="text-xl font-semibold text-[#FDE9A3]">• RULES:</h3>
           <ul className="list-disc list-inside text-white space-y-1 font-semibold">
             <li>Time limit: 3 to 5 minutes</li>
             <li>Language: Hindi, Marathi, English</li>
@@ -59,7 +59,7 @@ const EventnatyarangPage = () => {
             </li>
           </ul>
 
-          <h3 className="text-xl font-semibold text-yellow-400 mt-6">• JUDGING CRITERIA:</h3>
+          <h3 className="text-xl font-semibold text-[#FDE9A3] mt-6">• JUDGING CRITERIA:</h3>
           <ul className="list-disc list-inside text-white space-y-1 font-semibold">
             <li>Acting (facial and body expressions)</li>
             <li>Content originality</li>
@@ -73,10 +73,10 @@ const EventnatyarangPage = () => {
           </p>
         </div>
 
-        <h2 className="text-2xl font-semibold text-yellow-500 mt-6">2. DUET</h2>
+        <h2 className="text-2xl font-semibold text-[#FDE9A3] mt-6">2. DUET</h2>
 
         <div className="space-y-4">
-          <h3 className="text-xl font-semibold text-yellow-400">• RULES:</h3>
+          <h3 className="text-xl font-semibold text-[#FDE9A3]">• RULES:</h3>
           <ul className="list-disc list-inside text-white space-y-1 font-semibold">
             <li>Time limit: 5 to 7 minutes</li>
             <li>Language: Hindi, Marathi, English</li>
@@ -90,7 +90,7 @@ const EventnatyarangPage = () => {
             </li>
           </ul>
 
-          <h3 className="text-xl font-semibold text-yellow-400 mt-6">• JUDGING CRITERIA:</h3>
+          <h3 className="text-xl font-semibold text-[#FDE9A3] mt-6">• JUDGING CRITERIA:</h3>
           <ul className="list-disc list-inside text-white space-y-1 font-semibold">
             <li>Acting (facial and body expressions)</li>
             <li>Content originality</li>
@@ -104,10 +104,10 @@ const EventnatyarangPage = () => {
           </p>
         </div>
 
-        <h2 className="text-2xl font-semibold text-yellow-500 mt-6">3. GROUP</h2>
+        <h2 className="text-2xl font-semibold text-[#FDE9A3] mt-6">3. GROUP</h2>
 
         <div className="space-y-4">
-          <h3 className="text-xl font-semibold text-yellow-400">• RULES:</h3>
+          <h3 className="text-xl font-semibold text-[#FDE9A3]">• RULES:</h3>
           <ul className="list-disc list-inside text-white space-y-1 font-semibold">
             <li>Team size: Maximum 12 participants</li>
             <li>Time limit: 10 - 12 mins</li>
@@ -124,7 +124,7 @@ const EventnatyarangPage = () => {
             </li>
           </ul>
 
-          <h3 className="text-xl font-semibold text-yellow-400 mt-6">• JUDGING CRITERIA:</h3>
+          <h3 className="text-xl font-semibold text-[#FDE9A3] mt-6">• JUDGING CRITERIA:</h3>
           <ul className="list-disc list-inside text-white space-y-1 font-semibold">
             <li>Acting (facial and body expressions)</li>
             <li>Content originality</li>
@@ -143,7 +143,7 @@ const EventnatyarangPage = () => {
 
         <div className="mt-10">
           <Link href="/events">
-            <button className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-6 py-3 rounded-xl transition">
+            <button className="flex items-center backdrop-blur-md bg-[#FDE9A3] hover:bg-[#FDE9A3] border border-white text-black text-sm px-8 py-3 rounded-xl shadow-transparent hover:shadow-[#FDE9A3] transition duration-300 ease-in-out transform hover:scale-105 font-semibold space-x-2">
               ← Back to Events
             </button>
           </Link>

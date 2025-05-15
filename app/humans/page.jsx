@@ -36,9 +36,7 @@ import KB from "@/public/humansPage/Hospitality4.png";
 import JV from "@/public/humansPage/Magzine4.png";
 import HJ from "@/public/humansPage/Magzine3.png";
 
-import FooterAnimation from "@/components/FooterAnimation";
 import Footer from "@/components/Footer";
-import { FaWhatsapp } from "react-icons/fa";
 
 export const metadata = {
   title: "humans|Vismay",
@@ -66,224 +64,224 @@ export default function Team() {
       role: "President",
       profilepic: aman,
       instagram: "https://www.instagram.com/yashvinkare/",
-      whatsapp:"#"
+      whatsapp:"https://wa.me/8010459236?text=Hello!%20I%27m%20interested%20in%20participating%20in%20the%20quiz%20competition%20at%20VISMAY%202025.%20Kindly%20share%20the%20details%20and%20how%20I%20can%20register."
     },
     {
       name: "Kshitij Dhandare",
       role: " Vice President",
       profilepic: manoj,
       instagram: "https://www.instagram.com/kshitij_dhandare/",
-      whatsapp:"#"
+      whatsapp:"https://wa.me/7387933972?text=Hello!%20I%27m%20interested%20in%20participating%20in%20the%20quiz%20competition%20at%20VISMAY%202025.%20Kindly%20share%20the%20details%20and%20how%20I%20can%20register."
     },
     {
       name: " Ananya Shaji",
       role: " Organizing Secretary ",
       profilepic: deepanshu,
       instagram: "https://www.instagram.com/ananyashaji25/",
-      whatsapp:"#"
+      whatsapp:"https://wa.me/8999284279?text=Hello!%20I%27m%20interested%20in%20participating%20in%20the%20quiz%20competition%20at%20VISMAY%202025.%20Kindly%20share%20the%20details%20and%20how%20I%20can%20register."
     },
     {
       name: " Himanshu Kumre",
       role: "Organizing Secretary",
       profilepic: sambhav,
       instagram: "https://www.instagram.com/himanshu_kumre750/",
-      whatsapp:"#"
+      whatsapp:"https://wa.me/9021637161?text=Hello!%20I%27m%20interested%20in%20participating%20in%20the%20quiz%20competition%20at%20VISMAY%202025.%20Kindly%20share%20the%20details%20and%20how%20I%20can%20register."
     },
     {
       name: " Vaibhavi Joshi",
       role: "Cultural Secretary",
       profilepic: samyak,
       instagram: "https://www.instagram.com/vabjo_0506/",
-      whatsapp:"#"
+      whatsapp:"https://wa.me/7887325745?text=Hello!%20I%27m%20interested%20in%20participating%20in%20the%20quiz%20competition%20at%20VISMAY%202025.%20Kindly%20share%20the%20details%20and%20how%20I%20can%20register."
     },
     {
       name: " Rushikesh Gaikwad",
       role: "Cultural Secretary",
       profilepic: bhavik,
       instagram: "https://www.instagram.com/rushi_gaikwad08/",
-      whatsapp:"#"
+      whatsapp:"https://wa.me/9867805822?text=Hello!%20I%27m%20interested%20in%20participating%20in%20the%20quiz%20competition%20at%20VISMAY%202025.%20Kindly%20share%20the%20details%20and%20how%20I%20can%20register."
     },
     {
       name: "Shraddha Nipurte",
       role: "Cultural Secretary",
       profilepic: SN,
       instagram: "https://www.instagram.com/heyitshelianthus/",
-      whatsapp:"#"
+      whatsapp:"https://wa.me/8149115213?text=Hello!%20I%27m%20interested%20in%20participating%20in%20the%20quiz%20competition%20at%20VISMAY%202025.%20Kindly%20share%20the%20details%20and%20how%20I%20can%20register."
     },
     {
       name: "Rohit Padwal",
       role: "Cultural Secretary",
       profilepic: RP,
       instagram: "https://www.instagram.com/rohittpadwal_04/",
-      whatsapp:"#"
+      whatsapp:"https://wa.me/8691002183?text=Hello!%20I%27m%20interested%20in%20participating%20in%20the%20quiz%20competition%20at%20VISMAY%202025.%20Kindly%20share%20the%20details%20and%20how%20I%20can%20register."
     },
     {
       name: "Pradnya Chondkar",
       role: "Cultural Secretary",
       profilepic: PC,
       instagram: "https://www.instagram.com/pradnya_dc/",
-      whatsapp:"#"
+      whatsapp:"https://wa.me/7498135056?text=Hello!%20I%27m%20interested%20in%20participating%20in%20the%20quiz%20competition%20at%20VISMAY%202025.%20Kindly%20share%20the%20details%20and%20how%20I%20can%20register."
     },
     {
       name: "Siddhant Jagtap",
       role: "Cultural Secretary",
       profilepic: SJ,
       instagram: "https://www.instagram.com/emperor.013/",
-      whatsapp:"#"
+      whatsapp:"https://wa.me/8605552982?text=Hello!%20I%27m%20interested%20in%20participating%20in%20the%20quiz%20competition%20at%20VISMAY%202025.%20Kindly%20share%20the%20details%20and%20how%20I%20can%20register."
     },
     {
       name: "Anushka Yadav",
       role: "Cultural Secretary",
       profilepic: AY,
       instagram: "https://www.instagram.com/anushka_lallantop/",
-      whatsapp:"#"
+      whatsapp:"https://wa.me/8657313950?text=Hello!%20I%27m%20interested%20in%20participating%20in%20the%20quiz%20competition%20at%20VISMAY%202025.%20Kindly%20share%20the%20details%20and%20how%20I%20can%20register."
     },
     {
       name: " Ninad Patil",
       role: "Treasurer",
       profilepic: aryan,
       instagram: "https://www.instagram.com/ninad_patil_4102/",
-      whatsapp:"#"
+      whatsapp:"https://wa.me/9975664897?text=Hello!%20I%27m%20interested%20in%20participating%20in%20the%20quiz%20competition%20at%20VISMAY%202025.%20Kindly%20share%20the%20details%20and%20how%20I%20can%20register."
     },
     {
       name: " Bhavana Choudhari",
       role: "Treasurer",
       profilepic: prajwal,
       instagram: "https://www.instagram.com/_.bhavana._1904/",
-      whatsapp:"#"
+      whatsapp:"https://wa.me/8482825503?text=Hello!%20I%27m%20interested%20in%20participating%20in%20the%20quiz%20competition%20at%20VISMAY%202025.%20Kindly%20share%20the%20details%20and%20how%20I%20can%20register."
     },
     {
       name: "Harish Madavi",
       role: "Treasurer",
       profilepic: HM,
       instagram: "https://www.instagram.com/harrystreoo0/",
-      whatsapp:"#"
+      whatsapp:"https://wa.me/7507049585?text=Hello!%20I%27m%20interested%20in%20participating%20in%20the%20quiz%20competition%20at%20VISMAY%202025.%20Kindly%20share%20the%20details%20and%20how%20I%20can%20register."
     },
     {
       name: "Pranjal Wadekar",
       role: "Treasurer",
       profilepic: PW,
       instagram: "https://www.instagram.com/pranjal_0809/",
-      whatsapp:"#"
+      whatsapp:"https://wa.me/9325684286?text=Hello!%20I%27m%20interested%20in%20participating%20in%20the%20quiz%20competition%20at%20VISMAY%202025.%20Kindly%20share%20the%20details%20and%20how%20I%20can%20register."
     },
     {
       name: " Rohan Sarode ",
       role: "Public Relation",
       profilepic: tushir,
       instagram: "https://www.instagram.com/ro.haha.nnn/",
-      whatsapp:"#"
+      whatsapp:"https://wa.me/7744924437?text=Hello!%20I%27m%20interested%20in%20participating%20in%20the%20quiz%20competition%20at%20VISMAY%202025.%20Kindly%20share%20the%20details%20and%20how%20I%20can%20register."
     },
     {
       name: "Vrushabh Naik",
       role: "Public Relation",
       profilepic: VN,
       instagram: "https://www.instagram.com/rush_hub_/",
-      whatsapp:"#"
+      whatsapp:"https://wa.me/9860849715?text=Hello!%20I%27m%20interested%20in%20participating%20in%20the%20quiz%20competition%20at%20VISMAY%202025.%20Kindly%20share%20the%20details%20and%20how%20I%20can%20register."
     },
     {
       name: " Chaitanya Pandey", 
       role: "Techinical Team",
       profilepic: aish,
       instagram: "https://www.instagram.com/god_s_blade/",
-      whatsapp:"#"
+      whatsapp:"https://wa.me/9326610337?text=Hello!%20I%27m%20interested%20in%20participating%20in%20the%20quiz%20competition%20at%20VISMAY%202025.%20Kindly%20share%20the%20details%20and%20how%20I%20can%20register."
     },
     {
       name: " Nihal Mujawar",
       role: "Technical Team",
       profilepic: prajjwal,
       instagram: "https://www.instagram.com/n.i.h.a.l_05/",
-      whatsapp:"#"
+      whatsapp:"https://wa.me/8999193562?text=Hello!%20I%27m%20interested%20in%20participating%20in%20the%20quiz%20competition%20at%20VISMAY%202025.%20Kindly%20share%20the%20details%20and%20how%20I%20can%20register."
     },
     {
       name: " Gaurish Talreja",
       role: " Academic Team ",
       profilepic: priyansh,
       instagram: "https://www.instagram.com/gaurish._24/",
-      whatsapp:"#"
+      whatsapp:"https://wa.me/9137268322?text=Hello!%20I%27m%20interested%20in%20participating%20in%20the%20quiz%20competition%20at%20VISMAY%202025.%20Kindly%20share%20the%20details%20and%20how%20I%20can%20register."
     },
     {
       name: "Avni Chopra",
       role: " Academic Team ",
       profilepic: AC,
       instagram: "#",
-      whatsapp:"#"
+      whatsapp:"https://wa.me/7506112522?text=Hello!%20I%27m%20interested%20in%20participating%20in%20the%20quiz%20competition%20at%20VISMAY%202025.%20Kindly%20share%20the%20details%20and%20how%20I%20can%20register."
     },
     {
       name: "Yukta Bhangale",
       role: " Academic Team ",
       profilepic: YB,
       instagram: "https://www.instagram.com/_yuktaa08_/",
-      whatsapp:"#"
+      whatsapp:"https://wa.me/9321543539?text=Hello!%20I%27m%20interested%20in%20participating%20in%20the%20quiz%20competition%20at%20VISMAY%202025.%20Kindly%20share%20the%20details%20and%20how%20I%20can%20register."
     },
     {
       name: "Manish Singh",
       role: " Academic Team ",
       profilepic: MS,
       instagram: "https://www.instagram.com/manish_singh4048/",
-      whatsapp:"#"
+      whatsapp:"https://wa.me/9359865443?text=Hello!%20I%27m%20interested%20in%20participating%20in%20the%20quiz%20competition%20at%20VISMAY%202025.%20Kindly%20share%20the%20details%20and%20how%20I%20can%20register."
     },
     {
       name: " Suraj Katewar",
       role: "Hospitality & Registration Team Head",
       profilepic: divyansh,
       instagram: "https://www.instagram.com/suraj_katewar_00400/",
-      whatsapp:"#"
+      whatsapp:"https://wa.me/7499645510?text=Hello!%20I%27m%20interested%20in%20participating%20in%20the%20quiz%20competition%20at%20VISMAY%202025.%20Kindly%20share%20the%20details%20and%20how%20I%20can%20register."
     },
     {
       name: "Veena Khot",
       role: "Hospitality & Registration Team",
       profilepic: vansh,
       instagram: "https://www.instagram.com/veena_khot1811/",
-      whatsapp:"#"
+      whatsapp:"https://wa.me/9309338911?text=Hello!%20I%27m%20interested%20in%20participating%20in%20the%20quiz%20competition%20at%20VISMAY%202025.%20Kindly%20share%20the%20details%20and%20how%20I%20can%20register."
     },
     {
       name: "Anjali Koshti",
       role: "Hospitality & Registration Team",
       profilepic: AK,
       instagram: "https://www.instagram.com/anjali.k.2509/",
-      whatsapp:"#"
+      whatsapp:"https://wa.me/9403698583?text=Hello!%20I%27m%20interested%20in%20participating%20in%20the%20quiz%20competition%20at%20VISMAY%202025.%20Kindly%20share%20the%20details%20and%20how%20I%20can%20register."
     },
     {
       name: "Karan Bangar",
       role: "Hospitality & Registration Team",
       profilepic: KB,
       instagram: "https://www.instagram.com/__karansb/",
-      whatsapp:"#"
+      whatsapp:"https://wa.me/9022658065?text=Hello!%20I%27m%20interested%20in%20participating%20in%20the%20quiz%20competition%20at%20VISMAY%202025.%20Kindly%20share%20the%20details%20and%20how%20I%20can%20register."
     },
     {
       name: " Mrunal Kumbhar",
       role: " Magazine Team",
       profilepic: aditya,
       instagram: "https://www.instagram.com/mrunalkumbhar76/",
-      whatsapp:"#"
+      whatsapp:"https://wa.me/8379072359?text=Hello!%20I%27m%20interested%20in%20participating%20in%20the%20quiz%20competition%20at%20VISMAY%202025.%20Kindly%20share%20the%20details%20and%20how%20I%20can%20register."
     },
     {
       name: " Om Dhake",
       role: "Magazine Team",
       profilepic: varun,
       instagram: "https://www.instagram.com/omdhake__1007/",
-      whatsapp:"#"
+      whatsapp:"https://wa.me/7741912446?text=Hello!%20I%27m%20interested%20in%20participating%20in%20the%20quiz%20competition%20at%20VISMAY%202025.%20Kindly%20share%20the%20details%20and%20how%20I%20can%20register."
     },
     {
       name: " Jamila Vora",
       role: " Magazine Team",
       profilepic: JV,
       instagram: "https://www.instagram.com/jamila_vora/",
-      whatsapp:"#"
+      whatsapp:"https://wa.me/7498422772?text=Hello!%20I%27m%20interested%20in%20participating%20in%20the%20quiz%20competition%20at%20VISMAY%202025.%20Kindly%20share%20the%20details%20and%20how%20I%20can%20register."
   },
   {
     name: "Harshwardhan Jadhav",
     role: " Magazine Team",
     profilepic: HJ,
     instagram: "https://www.instagram.com/hari_4688_/",
-    whatsapp:"#"
+    whatsapp:"https://wa.me/9022236355?text=Hello!%20I%27m%20interested%20in%20participating%20in%20the%20quiz%20competition%20at%20VISMAY%202025.%20Kindly%20share%20the%20details%20and%20how%20I%20can%20register."
 },
   {
     name: "Muskan Murshad ",
     role: " Magazine Team",
     profilepic: Soham,
     instagram: "#",
-    whatsapp:"#"
+    whatsapp:"https://wa.me/8623076811?text=Hello!%20I%27m%20interested%20in%20participating%20in%20the%20quiz%20competition%20at%20VISMAY%202025.%20Kindly%20share%20the%20details%20and%20how%20I%20can%20register."
     },
     
   ];
@@ -309,8 +307,8 @@ export default function Team() {
               </p>
             </div>
             <p
-              className="text-[#F5F0D8] text-center text-[2.5rem] font-normal 
-                md:text-[4rem] xl:text-[5rem] md:leading-[4.5rem] xl:leading-[5.25rem]"
+              className="text-[#FDE9A3] text-center text-[2.5rem] font-normal 
+                md:text-[3rem] xl:text-[4rem] md:leading-[4.5rem] xl:leading-[5.25rem]"
             >
               Meet the humans of
               <br /> Vismay

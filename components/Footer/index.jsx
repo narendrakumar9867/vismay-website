@@ -3,7 +3,7 @@ import {
   TwitterLogoIcon,
   InstagramLogoIcon,
 } from "@radix-ui/react-icons";
-import { FaWhatsapp } from "react-icons/fa"; // Import WhatsApp icon from react-icons
+import { FaWhatsapp } from "react-icons/fa"; 
 
 const SocialMediaIcon = ({ Icon, href }) => (
   <a href={href} target="_blank" rel="noopener noreferrer">
@@ -17,7 +17,7 @@ const Footer = () => {
     <div className="bg-black flex flex-col px-4 md:px-10 xl:px-28">
       <hr className="border-[#808080] mb-12" />
       <div className="flex flex-col lg:flex-row gap-12 justify-between items-start">
-        <div className="flex gap-6 lg:ml-auto"> {/* Added lg:ml-auto */}
+        <div className="flex gap-6 lg:ml-auto">
           <SocialMediaIcon
             href="https://www.instagram.com/vismay_gmcmiraj/"
             Icon={InstagramLogoIcon}
@@ -33,7 +33,7 @@ const Footer = () => {
           tracking-tight pt-12 mb-8"
         style={{ wordSpacing: "0.2em" }}
       >
-        <span style={{ margin: "0.2em" }}>© 2025 Vismay, All rights reserved; Designed by</span> 
+        <span style={{ margin: "0.2em" }}>© 2025 Vismay, All rights reserved; Designed & Development by</span> 
         <a 
           href="https://www.linkedin.com/in/rushabh-doshi-aba7b0241/" 
           target="_blank" 

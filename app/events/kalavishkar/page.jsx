@@ -32,7 +32,7 @@ const EventKalavishkarPage = () => {
         { /* Header */}
         <div className="pt-12 pb-8 text-center px-4 md:px-12">
           <h1 className="text-4xl md:text-5xl font-bold">
-            <span className="text-yellow-500">KALAVISHKAAR,</span> DRAWING COMPETITION.
+            <span className="text-[#FDE9A3]">KALAVISHKAAR,</span> DRAWING COMPETITION.
           </h1>
           <p className="text-white max-w-3xl mx-auto mt-4 text-lg font-semibold">
             🎨 Got a vision that speaks louder than words?
@@ -41,10 +41,10 @@ const EventKalavishkarPage = () => {
         </div>
         
       <div className="max-w-4xl mx-auto space-y-6">
-        <h2 className="text-2xl font-semibold text-yellow-500 mt-6">1. DRAWING COMPETITION</h2>
+        <h2 className="text-2xl font-semibold text-[#FDE9A3] mt-6">1. DRAWING COMPETITION</h2>
 
         <div className="space-y-4">
-            <h3 className="text-xl font-semibold text-yellow-400">• Details:</h3>
+            <h3 className="text-xl font-semibold text-[#FDE9A3]">• Details:</h3>
             <ul className="list-disc list-inside text-white space-y-1 font-semibold">
                 <li>Open for all UGs, Interns, and PGs</li>
                 <li>Participant is free to use any medium of drawing (acrylics, watercolours, poster colours, crayons, etc.)</li>
@@ -52,7 +52,7 @@ const EventKalavishkarPage = () => {
                 <li>Theme: <strong>‘Myth, Maya, Mystery’</strong></li>
             </ul>
 
-            <h3 className="text-xl font-semibold text-yellow-400">• Rules:</h3>
+            <h3 className="text-xl font-semibold text-[#FDE9A3]">• Rules:</h3>
             <ul className="list-disc list-inside text-white space-y-1 font-semibold">
                 <li>Participants should send a minimum of 2 photos of the drawing in PDF or JPEG format</li>
                 <li>All photos should be mailed to: vismaydrawing@gmail.com</li>
@@ -61,7 +61,7 @@ const EventKalavishkarPage = () => {
                 <li>Last date of submission: 15 May</li>
             </ul>
 
-          <h3 className="text-xl font-semibold text-yellow-400">• Judging criteria:</h3>
+          <h3 className="text-xl font-semibold text-[#FDE9A3]">• Judging criteria:</h3>
           <ul className="list-disc list-inside text-white space-y-1 font-semibold">
             <li>Interpretation and the clarity of the theme to the viewer</li>
             <li>Creativity and originality of the depicted theme</li>
@@ -75,10 +75,10 @@ const EventKalavishkarPage = () => {
           </p>
         </div>
 
-        <h2 className="text-2xl font-semibold text-yellow-500 mt-6">2. PHOTOGRAPHY</h2>
+        <h2 className="text-2xl font-semibold text-[#FDE9A3] mt-6">2. PHOTOGRAPHY</h2>
 
         <div className="space-y-4">
-            <h3 className="text-xl font-semibold text-yellow-400">• Details:</h3>
+            <h3 className="text-xl font-semibold text-[#FDE9A3]">• Details:</h3>
             <ul className="list-disc list-inside text-white space-y-1 font-semibold">
                 <li>Open for all UGs, INTERNS, and PGs</li>
                 <li>Type/Genre of pictures (street, wildlife, etc.) is the complete choice of the participant</li>
@@ -91,14 +91,14 @@ const EventKalavishkarPage = () => {
                 Disqualification.
             </p>
 
-            <h3 className="text-xl font-semibold text-yellow-400">• Rules:</h3>
+            <h3 className="text-xl font-semibold text-[#FDE9A3]">• Rules:</h3>
             <ul className="list-disc list-inside text-white space-y-1 font-semibold">
                 <li>Minimum 2 photos of the category participants are participating in</li>
                 <li>All photos should be sent to the given email address in PDF or JPEG format. Email id: <strong>gmcmvismay@gmail.com</strong></li>
                 <li>Judge's decision will be final</li>
             </ul>
 
-          <h3 className="text-xl font-semibold text-yellow-400">• Judging criteria:</h3>
+          <h3 className="text-xl font-semibold text-[#FDE9A3]">• Judging criteria:</h3>
           <ul className="list-disc list-inside text-white space-y-1 font-semibold">
             <li>Its impact</li>
             <li>The lighting</li>
@@ -117,7 +117,7 @@ const EventKalavishkarPage = () => {
 
         <div className="mt-10">
           <Link href="/events">
-            <button className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-6 py-3 rounded-xl transition">
+            <button className="flex items-center backdrop-blur-md bg-[#FDE9A3] hover:bg-[#FDE9A3] border border-white text-black text-sm px-8 py-3 rounded-xl shadow-transparent hover:shadow-[#FDE9A3] transition duration-300 ease-in-out transform hover:scale-105 font-semibold space-x-2">
               ← Back to Events
             </button>
           </Link>

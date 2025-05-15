@@ -91,7 +91,7 @@ export default function Navbar() {
       </nav>
 
       {/* Mobile Hamburger */}
-      <div className="fixed top-12 left-3 xl:hidden flex items-center justify-start z-50">
+      <div className="fixed top-5 left-3 xl:hidden flex items-center justify-start z-50">
         <button
           id="menu-btn"
           aria-label="Toggle Menu"

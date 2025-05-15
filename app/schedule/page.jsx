@@ -65,7 +65,7 @@ export default function Schedule() {
       >
         <div className="w-full flex flex-col gap-6 xl:gap-8">
           <div className="flex flex-col items-center gap-4">
-            <p className="text-[#F5F0D8] font-normal text-[2.25rem] md:text-[5rem]">
+            <p className="text-[#FDE9A3] font-normal text-[2.25rem] md:text-[5rem]">
               Run of Show
             </p>
             <p
@@ -156,10 +156,10 @@ export default function Schedule() {
                 >
                   Day 1 Timeline
                 </DialogTitle>
-                <DialogDescription className="text-white">
+                <DialogDescription className="text-black">
                   <ScrollArea className="h-[500px] lg:h-[350px] w-full overflow-auto">
                     <Table>
-                      <TableHeader className="bg-[#0275F6]">
+                      <TableHeader className="bg-[#FDE9A3]">
                         <TableRow className="text-[1rem] md:text-[1.5rem] font-medium">
                           <TableHead>Event</TableHead>
                           <TableHead>Time</TableHead>
@@ -169,7 +169,7 @@ export default function Schedule() {
                       <TableBody>
                         <TableRow>
                           <TableCell colSpan={3} className="text-center py-10">
-                            <p className="text-4xl font-serif font-bold text-blue-400 drop-shadow-md">
+                            <p className="text-4xl font-serif font-bold text-[#FDE9A3] drop-shadow-md">
                               Schedule yet to announce
                             </p>
                           </TableCell>
@@ -270,10 +270,10 @@ export default function Schedule() {
                 >
                   Day 2 Timeline
                 </DialogTitle>
-                <DialogDescription className="text-white">
+                <DialogDescription className="text-black">
                   <ScrollArea className="h-[500px] lg:h-[350px] w-full overflow-auto">
                     <Table>
-                      <TableHeader className="bg-[#1FD26C]">
+                      <TableHeader className="bg-[#FDE9A3]">
                         <TableRow className="text-[1rem] md:text-[1.5rem] font-medium">
                           <TableHead>Event</TableHead>
                           <TableHead>Time</TableHead>
@@ -283,7 +283,7 @@ export default function Schedule() {
                       <TableBody>
                         <TableRow>
                           <TableCell colSpan={3} className="text-center py-10">
-                            <p className="text-4xl font-serif font-bold text-green-400 drop-shadow-md">
+                            <p className="text-4xl font-serif font-bold text-[#FDE9A3] drop-shadow-md">
                               Schedule yet to announce
                             </p>
                           </TableCell>
@@ -385,10 +385,10 @@ export default function Schedule() {
                 >
                   Day 3 Timeline
                 </DialogTitle>
-                <DialogDescription className="text-white">
+                <DialogDescription className="text-black">
                   <ScrollArea className="h-[500px] lg:h-[350px] w-full overflow-auto">
                     <Table>
-                      <TableHeader className="bg-[#F2D23B]">
+                      <TableHeader className="bg-[#FDE9A3]">
                         <TableRow className="text-[1rem] md:text-[1.5rem] font-medium">
                           <TableHead>Event</TableHead>
                           <TableHead>Time</TableHead>
@@ -398,7 +398,7 @@ export default function Schedule() {
                       <TableBody>
                         <TableRow>
                           <TableCell colSpan={3} className="text-center py-10">
-                            <p className="text-4xl font-serif font-bold text-yellow-400 drop-shadow-md">
+                            <p className="text-4xl font-serif font-bold text-[#FDE9A3] drop-shadow-md">
                               Schedule yet to announce
                             </p>
                           </TableCell>

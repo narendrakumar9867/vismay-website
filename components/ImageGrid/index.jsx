@@ -19,7 +19,7 @@ const GridImage = () => {
             <Image
               src={img6}
               alt="1"
-              className="xl:w-[420px] xl:h-[300px] lg:w-[320px] w-[280px] h-[200px] rounded-xl object-cover"
+              className="xl:w-[430px] xl:h-[300px] lg:w-[320px] w-[300px] h-[200px] rounded-xl object-cover"
               placeholder="blur"
               priority
             />
@@ -28,7 +28,7 @@ const GridImage = () => {
             <Image
               src={img7}
               alt="2"
-              className="xl:w-[420px] xl:h-[280px] lg:w-[320px] w-[280px] h-[200px] rounded-xl object-cover"
+              className="xl:w-[430px] xl:h-[280px] lg:w-[320px] w-[300px] h-[200px] rounded-xl object-cover"
               placeholder="blur"
             />
           </div>
@@ -36,7 +36,7 @@ const GridImage = () => {
             <Image
               src={img4}
               alt="3"
-              className="xl:w-[420px] xl:h-[530px] lg:w-[320px] w-[280px] h-[320px] rounded-xl object-cover"
+              className="xl:w-[430px] xl:h-[530px] lg:w-[320px] w-[300px] h-[320px] rounded-xl object-cover"
               placeholder="blur"
             />
           </div>
@@ -47,16 +47,16 @@ const GridImage = () => {
             <Image
               src={img8}
               alt="4"
-              className="xl:w-[420px] xl:h-[520px] lg:w-[320px] w-[280px] h-[320px] rounded-xl object-cover"
+              className="xl:w-[430px] xl:h-[520px] lg:w-[320px] w-[300px] h-[320px] rounded-xl object-cover"
               placeholder="blur"
               priority
             />
           </div>
           <div>
             <Image
-              src={img9}
+              src={img3}
               alt="5"
-              className="xl:w-[420px] xl:h-[300px] lg:w-[320px] w-[280px] h-[200px] rounded-xl object-cover"
+              className="xl:w-[430px] xl:h-[300px] lg:w-[320px] w-[300px] h-[200px] rounded-xl object-cover"
               placeholder="blur"
             />
           </div>
@@ -64,7 +64,7 @@ const GridImage = () => {
             <Image
               src={img5}
               alt="6"
-              className="xl:w-[420px] xl:h-[280px] lg:w-[320px] w-[280px] h-[200px] rounded-xl object-cover"
+              className="xl:w-[430px] xl:h-[280px] lg:w-[320px] w-[300px] h-[200px] rounded-xl object-cover"
               placeholder="blur"
             />
           </div>
@@ -75,7 +75,7 @@ const GridImage = () => {
             <Image
               src={img1}
               alt="7"
-              className="xl:w-[420px] xl:h-[280px] lg:w-[320px] w-[280px] h-[200px] rounded-xl object-cover"
+              className="xl:w-[430px] xl:h-[280px] lg:w-[320px] w-[300px] h-[200px] rounded-xl object-cover"
               placeholder="blur"
               priority
             />
@@ -84,16 +84,17 @@ const GridImage = () => {
             <Image
               src={img2}
               alt="8"
-              className="xl:w-[420px] xl:h-[280px] lg:w-[320px] w-[280px] h-[200px] rounded-xl object-cover"
+              className="xl:w-[430px] xl:h-[280px] lg:w-[320px] w-[300px] h-[200px] rounded-xl object-cover"
               placeholder="blur"
               priority
             />
           </div>
           <div>
             <Image
-              src={img3}
+              src={img9}
               alt="9"
-              className="xl:w-[420px] xl:h-[540px] lg:w-[320px] w-[280px] h-[320px] rounded-xl object-cover"
+              className="xl:w-[430px] xl:h-[540px] lg:w-[320px] w-[300px] h-[320px] rounded-xl object-cover"
+
               placeholder="blur"
             />
           </div>

@@ -31,7 +31,7 @@ const Gallery = () => {
       <div className="bg-[#101010] flex flex-col min-h-screen p-4 md:px-8 lg:px-12 py-12">
         <div className="w-full flex flex-col gap-2 ">
           <div className="flex flex-col items-center gap-2">
-            <p className="text-[#F5F0D8] font-normal text-[2.25rem] md:text-[5rem]">
+            <p className="text-[#FDE9A3] font-normal text-[2.25rem] md:text-[5rem]">
               Gallery
             </p>
             <p

@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import Navbar from "@/components/Navbar";
 import TextAnimation from "@/components/TextAnimation";
-import FooterAnimation from "@/components/FooterAnimation";
 import Footer from "@/components/Footer";
 import "./page.css";
 
@@ -11,7 +10,7 @@ export default function Contact() {
   return (
     <>
       <Navbar />
-      <div className="bg-[#101010] flex flex-col min-h-screen p-4 md:pb-64 lg:px-0 md:pt-24 pt-12">
+      <div className="bg-[#101010] flex flex-col min-h-screen p-4 md:pb-64 lg:px-0 md:pt-4 pt-4">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -27,7 +26,7 @@ export default function Contact() {
             className="flex flex-col justify-between items-start sm:items-center gap-12 md:gap-0 md:flex-row md:items-start"
           >
             <div className="flex flex-col items-start gap-8">
-              <TextAnimation text="How can we help you? " />
+              <TextAnimation className="text-[#FDE9A3]" text="How can we help you? " />
               <motion.p
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -36,7 +35,7 @@ export default function Contact() {
                 className="w-full text-[#C3C3C3] font-['Inter'] font-normal text-[1.25rem] sm:max-w-[32rem] lg:max-w-[40rem] xl:max-w-[50rem] 2xl:max-w-[55rem] md:text-[1rem] xl:text-[1.5rem]"
               >
                 At Vismay, we celebrate culture, creativity, and connection.
-                From performers to participants, we’re here to make your experience unforgettable.
+                From performers to participants, we are here to make your experience unforgettable.
                 Have questions or need help? Reach out—our team is always here for you!
               </motion.p>
             </div>

@@ -32,7 +32,7 @@ const EventAntarnaadPage = () => {
         { /* Header */}
         <div className="pt-12 pb-8 text-center px-4 md:px-12">
           <h1 className="text-4xl md:text-5xl font-bold">
-            <span className="text-yellow-500">ANTARNAAD,</span> Open mic competition.
+            <span className="text-[#FDE9A3]">ANTARNAAD,</span> Open mic competition.
           </h1>
           <p className="text-white max-w-3xl mx-auto mt-4 text-lg font-semibold">
             Are you talented? But not getting a platform, worry not. Be confident,
@@ -43,7 +43,7 @@ const EventAntarnaadPage = () => {
         
       <div className="max-w-4xl mx-auto space-y-6">
         <div className="space-y-4">
-          <h3 className="text-xl font-semibold text-yellow-500">• RULES:</h3>
+          <h3 className="text-xl font-semibold text-[#FDE9A3]">• RULES:</h3>
           <ul className="list-disc list-inside text-white space-y-1 font-semibold">
             <li>Time limit: 1-2 minutes</li>
             <li>Language: Hindi, Marathi or English</li>
@@ -54,14 +54,14 @@ const EventAntarnaadPage = () => {
             <li>Participants must report to the venue at informed time</li>
             <li>Any breach of rules will lead to disqualification</li>
           </ul>
-          <h3 className="text-xl font-semibold text-yellow-500 mt-6">Entry fees: ₹100/-</h3>
+          <h3 className="text-xl font-semibold text-[#FDE9A3] mt-6">Entry fees: ₹100/-</h3>
           <p className="text-white font-semibold mt-4">
             • Winners will be awarded with trophies and attractive prizes.
           </p>
         </div>
         <div className="mt-10">
           <Link href="/events">
-            <button className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-6 py-3 rounded-lg transition">
+            <button className="flex items-center backdrop-blur-md bg-[#FDE9A3] hover:bg-[#FDE9A3] border border-white text-black text-sm px-8 py-3 rounded-xl shadow-transparent hover:shadow-[#FDE9A3] transition duration-300 ease-in-out transform hover:scale-105 font-semibold space-x-2">
               ← Back to Events
             </button>
           </Link>

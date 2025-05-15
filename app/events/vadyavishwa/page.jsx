@@ -32,7 +32,7 @@ const EventVadyavishwaPage = () => {
         { /* Header */}
         <div className="pt-12 pb-8 text-center px-4 md:px-12">
           <h1 className="text-4xl md:text-5xl font-bold">
-            <span className="text-yellow-500">VADYAVISHWA,</span> Music competition.
+            <span className="text-[#FDE9A3]">VADYAVISHWA,</span> Music competition.
           </h1>
           <p className="text-white max-w-3xl mx-auto mt-4 text-lg font-semibold">
             🎶 Feel the rhythm? Got music running through your veins?
@@ -41,10 +41,10 @@ const EventVadyavishwaPage = () => {
         </div>
         
       <div className="max-w-4xl mx-auto space-y-6">
-        <h2 className="text-2xl font-semibold text-yellow-500 mt-6">1. BATTLE OF BANDS</h2>
+        <h2 className="text-2xl font-semibold text-[#FDE9A3] mt-6">1. BATTLE OF BANDS</h2>
 
         <div className="space-y-4">
-          <h3 className="text-xl font-semibold text-yellow-400">• RULES:</h3>
+          <h3 className="text-xl font-semibold text-[#FDE9A3]">• RULES:</h3>
           <ul className="list-disc list-inside text-white space-y-1 font-semibold">
             <li>Time limit: 25 to 30 minutes.</li>
             <li>Derogatory language is strictly prohibited.</li>
@@ -62,9 +62,9 @@ const EventVadyavishwaPage = () => {
             • Winners will be awarded with trophies and attractive prizes.
           </p>
 
-          <h2 className="text-2xl font-semibold text-yellow-500 mt-6">2. INSTRUMENTALS</h2>
+          <h2 className="text-2xl font-semibold text-[#FDE9A3] mt-6">2. INSTRUMENTALS</h2>
 
-          <h3 className="text-xl font-semibold text-yellow-400">• RULES:</h3>
+          <h3 className="text-xl font-semibold text-[#FDE9A3]">• RULES:</h3>
           <ul className="list-disc list-inside text-white space-y-1 font-semibold">
             <li>Time limit: 4 to 5 minutes (including instruments checking and set up)</li>
             <li>Max no. of participants: 3</li>
@@ -83,7 +83,7 @@ const EventVadyavishwaPage = () => {
         </div>
         <div className="mt-10">
           <Link href="/events">
-            <button className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-6 py-3 rounded-xl transition">
+            <button className="flex items-center backdrop-blur-md bg-[#FDE9A3] hover:bg-[#FDE9A3] border border-white text-black text-sm px-8 py-3 rounded-xl shadow-transparent hover:shadow-[#FDE9A3] transition duration-300 ease-in-out transform hover:scale-105 font-semibold space-x-2">
               ← Back to Events
             </button>
           </Link>

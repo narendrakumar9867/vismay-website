@@ -5,35 +5,23 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { motion } from "framer-motion";
 import Link from "next/link";
-// import FooterAnimation from "@/components/FooterAnimation";
-// import { Environment, OrbitControls } from '@react-three/drei';
-// import { Canvas } from '@react-three/fiber';
-// import { Boxs } from "@/components/Box";
 import  CustomizedButtons  from "@/components/register_button";
+import dynamic from 'next/dynamic';
+// import { Canvas } from '@react-three/fiber';
+// import { Vismay } from "@/components/vismay_model";
 
-<div className="CollegeName text-center text-white mt-8">
-  <h3 className="text-xl font-semibold">
-    GOVERNMENT MEDICAL COLLEGE AND HOSPITAL, MIRAJ AND PVPGH SANGLI
-  </h3>
-</div>
-
-// const modelAnimation = () => {
+// const VismayModel = () => {
 //   return (
-//     <div className="h-[500px] w-[600px] max-h-[500px] max-w-[600px]">
+//     <div className="h-[100vh] w-[100vw]">
 //       <Canvas>
-//         <Environment
-//           // files="/assets/hdri/studio_small_03_1k.hdr" // Use the local file path
-//           preset="city" // Ensure preset is null when using custom HDRI
-//         />
-//         <OrbitControls />
-//         <Boxs />
+//         <ambientLight />
+//         <Suspense fallback={null}>
+//           <Vismay />
+//         </Suspense>
 //       </Canvas>
 //     </div>
-//   );
-// };
-
-// Countdown Component
-
+//   )
+// }
 
 const Countdown = () => {
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
@@ -102,11 +90,21 @@ export default function Home() {
     {
       imgSrc: "/aboutPage/MS's.png",
       title: "MS's Message",
-      description: `MS'S MESSAGE
-
-College life is more than just lectures and textbooks — it's about finding balance, building connections, and growing into well-rounded individuals. As doctors in the making, it's important that we also take time to relax, express ourselves, and support each other. Vismay 2025 is a celebration of this very spirit. It brings together students through music, sports, art, and shared enthusiasm. It’s an opportunity to step away from routine, discover new talents, and strengthen the sense of community we all value. We look forward to seeing you participate, perform, and enjoy every moment. Let this fest be a refreshing and meaningful chapter in your journey.`
+      description: `MS'S MESSAGE College life is more than just lectures and textbooks — it's about finding balance, building connections, and growing into well-rounded individuals. As doctors in the making, it's important that we also take time to relax, express ourselves, and support each other. Vismay 2025 is a celebration of this very spirit. It brings together students through music, sports, art, and shared enthusiasm. It’s an opportunity to step away from routine, discover new talents, and strengthen the sense of community we all value. We look forward to seeing you participate, perform, and enjoy every moment. Let this fest be a refreshing and meaningful chapter in your journey.`
     },
   ];
+
+  const [ expandedIndex, setExpandedIndex ] = useState(null);
+
+  const getPreview = (text, length = 180) => {
+    if (text.length <= length) return text;
+    return text.slice(0, length) + "...";
+  };
+
+
+  const BrochureViewer = dynamic(() => import('@/components/BrochureViewer'), {
+  ssr: false, // Server Side Rendering disable karein
+  });
 
   return (
     <div
@@ -123,18 +121,17 @@ College life is more than just lectures and textbooks — it's about finding bal
     >
       <div className="absolute inset-0 bg-black/50 z-0"></div>
       <div className="relative z-10">
+
         <Navbar />
 
-
-        <div className="w-full flex flex-row items-center justify-between px-12 pl-14 pr-5 py-6 bg-transparent">
+        <div className="w-full flex flex-row items-center justify-between px-3 md:px-30 py-2 bg-transparent pl-14">
           <div className="text-white text-center flex-1">
-            <h3 className="text-sm md:text-sm lg:text-2xl font-serif font-extrabold leading-tight tracking-wide">
-              GOVERNMENT MEDICAL COLLEGE AND HOSPITAL, <br className="hidden sm:block" />
+            <h1 className="text-xs sm:text-xs md:text-xl font-serif font-extrabold leading-none tracking-wide">
+              GOVERNMENT MEDICAL COLLEGE AND HOSPITAL,<br className="hidden sm:block" />
               MIRAJ AND PVPGH SANGLI
-            </h3>
+            </h1>
           </div>
-
-          <div className="flex-shrink-0 ml-4">
+          <div className="flex-shrink-0">
             <a
               id="GMC-Miraj"
               href="https://www.gmcmiraj.edu.in/"
@@ -149,13 +146,25 @@ College life is more than just lectures and textbooks — it's about finding bal
             </a>
           </div>
         </div>
+        <div className="mt-0 h-0.5 w-full bg-white opacity-40"></div>
 
-        <div className="pt-20 md:pt-32 pb-2 px-10 md:px-10 flex justify-center ">
+        {/* <VismayModel /> */}
+        <div className="text-white text-center flex-1 pt-14">
+          <h1 className="font-serif font-extrabold leading-none tracking-wide">
+            <span className="block text-6xl sm:text-7xl md:text-9xl text-[#FDE9A3]">Vismay</span>
+            <br className="hidden sm:block" />
+            <span className="block text-lg sm:text-2xl md:text-3xl font-normal mt-2">
+              More than just a story its legacy
+            </span>
+          </h1>
+        </div>
+
+        <div className="pt-14 md:pt-20 pb-2 px-10 md:px-10 flex justify-center ">
           <Link
             href="https://drive.google.com/uc?export=download&id=1gWFHpZ-DY-jAH8-wi4ydNooCXLK3woni"
             download="Events_Brochure.pdf"
           >
-            <button className="backdrop-blur-md bg-gray-500/30 hover:bg-gray-500/50 border border-yellow-300 text-white text-sm px-8 py-3 rounded-xl shadow-lg hover:shadow-yellow-500/40 transition duration-300 ease-in-out transform hover:scale-105 font-medium flex items-center space-x-2">
+            <button className="backdrop-blur-md bg-gray-500/30 hover:bg-gray-500/50 border border-[#FDE9A3] text-white text-sm px-8 py-3 rounded-full shadow-lg hover:shadow-yellow-500/40 transition duration-300 ease-in-out transform hover:scale-105 font-medium flex items-center space-x-2">
               <span>Events Brochure</span>
             </button>
           </Link>
@@ -167,50 +176,67 @@ College life is more than just lectures and textbooks — it's about finding bal
           {/* <div className="flex justify-center items-center w-full py-16">
             {modelAnimation()}
           </div> */}
-          <div className="flex justify-center items-center w-full py-16 md:py-32">
+          <div className="flex justify-center items-center w-full py-10 md:py-16">
             <Countdown />
           </div>
         </div>
 
-        <div className="w-full flex flex-col bg-[#101010]/90">
-          <div className="flex flex-col items-center justify-center p-8 md:px-16 xl:px-32 py-20 md:py-32">
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 1 }}
-              className="flex flex-col items-center justify-center text-center gap-10 border-2 rounded-2xl p-10 md:p-16"
-              style={{
-                background: "radial-gradient(116.96% 115.94% at 9.81% 9.24%, #363636 0%, rgba(26, 26, 26, 0.27) 100%)",
-                borderColor: "rgba(255, 255, 255, 0.6)",
-              }}
-            >
-              {aboutData.map((item, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, x: index % 2 === 0 ? -100 : 100 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 1 }}
-                  className="flex flex-col items-center justify-center gap-8 w-full"
-                >
-                  <motion.img
-                    initial={{ opacity: 0, scale: 0.7 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
+          <div className="w-full flex flex-col bg-[#101010]/90">
+
+          <BrochureViewer />
+          
+            <div className="flex flex-col items-center justify-center p-8 md:px-10 sm:px-16 py-20 md:py-32">
+              <motion.div
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 1 }}
+                className="flex flex-col items-center justify-center text-center gap-10 border-2 rounded-2xl p-10 md:p-16"
+                style={{
+                  background: "radial-gradient(116.96% 115.94% at 9.81% 9.24%, #363636 0%, rgba(26, 26, 26, 0.27) 100%)",
+                  borderColor: "rgba(255, 255, 255, 0.6)",
+                }}
+              >
+                {aboutData.map((item, index) => (
+                  <motion.div
+                    key={index}
+                    initial={{ opacity: 0, x: index % 2 === 0 ? -100 : 100 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
                     transition={{ duration: 1 }}
-                    src={item.imgSrc}
-                    alt={item.title}
-                    className="rounded-lg w-full max-w-md"
-                  />
-                  <div className="text-[#FAF8ED]">
-                    <h2 className="text-2xl font-bold mb-4">{item.title}</h2>
-                    <p className="text-sm md:text-base whitespace-pre-line">{item.description}</p>
-                  </div>
-                </motion.div>
-              ))}
-            </motion.div>
+                    className="flex flex-col items-center justify-center gap-8 w-full"
+                  >
+                    <motion.img
+                      initial={{ opacity: 0, scale: 0.7 }}
+                      whileInView={{ opacity: 1, scale: 1 }}
+                      transition={{ duration: 1 }}
+                      src={item.imgSrc}
+                      alt={item.title}
+                      className="rounded-lg w-full max-w-md"
+                    />
+                    <div className="text-[#FAF8ED]">
+                      <h2 className="text-2xl font-bold mb-4">{item.title}</h2>
+                      <p className="text-sm md:text-base whitespace-pre-line">
+                        {expandedIndex === index
+                          ? item.description
+                          : getPreview(item.description)}
+                        {item.description.length > 180 && (
+                          <button
+                            className="ml-2 text-[#FDE9A3] underline text-sm"
+                            onClick={() =>
+                              setExpandedIndex(expandedIndex === index ? null : index)
+                            }
+                          >
+                            {expandedIndex === index ? "Read Less" : "Read More"}
+                          </button>
+                        )}
+                      </p>
+                    </div>
+                  </motion.div>
+                ))}
+              </motion.div>
+            </div>
           </div>
-        </div>
           <div className="flex flex-col md:flex-row justify-between items-center gap-16 md:gap-20 px-6 md:px-12 xl:px-24 py-20">
 
             <p className="max-w-4xl text-6xl md:text-7xl lg:text-8xl xl:text-[9rem] font-extrabold leading-tight text-center md:text-left tracking-tight">
@@ -251,11 +277,9 @@ College life is more than just lectures and textbooks — it's about finding bal
                 Mystery!
               </span>
             </p>
-
           </div>
         <Footer />
       </div>
     </div>
-
   );
 };

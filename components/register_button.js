@@ -5,7 +5,7 @@ import Stack from '@mui/material/Stack';
 
 const ColorButton = styled(Button)(({ theme }) => ({
   color: "#fff",
-  background: "linear-gradient(135deg, #001f3f, #003366)", // Gradient navy
+  background: "linear-gradient(135deg, #001f3f, #003366)", 
   padding: "12px 24px",
   fontSize: "1rem",
   fontWeight: 600,
@@ -13,11 +13,17 @@ const ColorButton = styled(Button)(({ theme }) => ({
   boxShadow: "0 4px 20px rgba(0,0,0,0.4)",
   transition: "all 0.3s ease-in-out",
   '&:hover': {
-    background: "linear-gradient(135deg, #FFD700, #FFA500)", // Gold gradient
+    background: "linear-gradient(135deg, #FFD700, #FFA500)", 
     color: "#000",
     transform: "scale(1.05)",
-    boxShadow: "0 0 15px 5px rgba(255,215,0,0.5)", // Gold glow
+    boxShadow: "0 0 15px 5px rgba(255,215,0,0.5)", 
   },
+
+  [theme.breakpoints.down('sm')]: {
+    padding: "8px 16px",
+    fontSize: "0.8rem",
+    borderRadius: "10px",
+  }
 }));
 
 export default function CustomizedButtons() {
