@@ -166,20 +166,20 @@ export default function Team() {
     },
     {
       name: " Rohan Sarode ",
-      role: "Public Relation",
+      role: "Public Relations",
       profilepic: tushir,
       instagram: "https://www.instagram.com/ro.haha.nnn/",
       whatsapp:"https://wa.me/7744924437?text=Hello!%20I%27m%20interested%20in%20participating%20in%20the%20quiz%20competition%20at%20VISMAY%202025.%20Kindly%20share%20the%20details%20and%20how%20I%20can%20register."
     },
     {
       name: "Vrushabh Naik",
-      role: "Public Relation",
+      role: "Public Relations",
       profilepic: VN,
       instagram: "https://www.instagram.com/rush_hub_/",
       whatsapp:"https://wa.me/9860849715?text=Hello!%20I%27m%20interested%20in%20participating%20in%20the%20quiz%20competition%20at%20VISMAY%202025.%20Kindly%20share%20the%20details%20and%20how%20I%20can%20register."
     },
     {
-      name: " Chaitanya Pandey", 
+      name: " Chaitanya Pande ", 
       role: "Techinical Team",
       profilepic: aish,
       instagram: "https://www.instagram.com/god_s_blade/",
@@ -222,7 +222,7 @@ export default function Team() {
     },
     {
       name: " Suraj Katewar",
-      role: "Hospitality & Registration Team Head",
+      role: "Hospitality & Registration Team",
       profilepic: divyansh,
       instagram: "https://www.instagram.com/suraj_katewar_00400/",
       whatsapp:"https://wa.me/7499645510?text=Hello!%20I%27m%20interested%20in%20participating%20in%20the%20quiz%20competition%20at%20VISMAY%202025.%20Kindly%20share%20the%20details%20and%20how%20I%20can%20register."
