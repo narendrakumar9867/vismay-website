@@ -5,7 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import  CustomizedButtons  from "@/components/register_button";
+// import  CustomizedButtons  from "@/components/register_button";
 import dynamic from 'next/dynamic';
 // import { Canvas } from '@react-three/fiber';
 // import { Vismay } from "@/components/vismay_model";
@@ -57,18 +57,22 @@ const Countdown = () => {
       className="text-center text-[#FAF8ED]"
     >
       <p className="text-lg font-medium">Event starts in:</p>
-      <div className="flex flex-wrap justify-center gap-4 mt-4 px-2 sm:px-0">
-        {["Days", "Hours", "Minutes", "Seconds"].map((label, index) => (
-          <motion.div
-            key={label}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: index * 0.2 }}
-            className="bg-[#FAF8ED] text-black px-4 py-2 rounded-lg min-w-[70px] text-center"
-          >
-            {Object.values(timeLeft)[index]} <span className="block text-sm">{label}</span>
-          </motion.div>
-        ))}
+
+      <div className="mt-4 px-2 sm:px-0 flex justify-center">
+        <div className="flex flex-row gap-4 bg-transparent rounded-xl p-2 overflow-x-auto">
+          {["Days", "Hours", "Minutes", "Seconds"].map((label, index) => (
+            <motion.div
+              key={label}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: index * 0.2 }}
+              className="bg-[#FAF8ED] text-black px-3 py-2 rounded-md min-w-[50px] text-center shadow-lg hover:scale-105 transition-transform duration-300"
+            >
+              <div className='text-2xl font-bold'>{Object.values(timeLeft)[index]}</div>
+              <span className="block text-xs text-gray-700 mt-1 tracking-wide">{label}</span>
+            </motion.div>
+          ))}
+        </div>
       </div>
     </motion.div>
   );
@@ -105,6 +109,12 @@ export default function Home() {
   const BrochureViewer = dynamic(() => import('@/components/BrochureViewer'), {
   ssr: false, // Server Side Rendering disable karein
   });
+
+  const eventPage = [
+    {
+      link:"/events"
+    },
+  ];
 
   return (
     <div
@@ -149,43 +159,83 @@ export default function Home() {
         <div className="mt-0 h-0.5 w-full bg-white opacity-40"></div>
 
         {/* <VismayModel /> */}
+        
         <div className="text-white text-center flex-1 pt-14">
           <h1 className="font-serif font-extrabold leading-none tracking-wide">
             <span className="block text-6xl sm:text-7xl md:text-9xl text-[#FDE9A3]">Vismay</span>
             <br className="hidden sm:block" />
             <span className="block text-lg sm:text-2xl md:text-3xl font-normal mt-2">
-              More than just a story its legacy
+              More than just a story its a legacy
             </span>
           </h1>
         </div>
 
-        <div className="pt-14 md:pt-20 pb-2 px-10 md:px-10 flex justify-center ">
-          <Link
-            href="https://drive.google.com/uc?export=download&id=1gWFHpZ-DY-jAH8-wi4ydNooCXLK3woni"
-            download="Events_Brochure.pdf"
-          >
-            <button className="backdrop-blur-md bg-gray-500/30 hover:bg-gray-500/50 border border-[#FDE9A3] text-white text-sm px-8 py-3 rounded-full shadow-lg hover:shadow-yellow-500/40 transition duration-300 ease-in-out transform hover:scale-105 font-medium flex items-center space-x-2">
-              <span>Events Brochure</span>
+        <div className="pt-14 md:pt-20 pb-2 px-6 flex flex-col sm:flex-row justify-center items-center gap-4">
+          {eventPage.map((event) => (
+            <Link href={event.link}>
+            <button className="w-full sm:w-auto backdrop-blur-md bg-gray-500/30 hover:bg-gray-500/50 border border-white text-white text-sm px-6 py-3 rounded-full shadow-lg hover:shadow-white transition duration-300 ease-in-out transform hover:scale-105 font-medium flex items-center justify-center">
+              <span className="mr-2">🎭</span>
+              <strong>Explore Events</strong>
             </button>
           </Link>
+          ))}
+
+          <Link href="https://linktr.ee/VISMAY25">
+            <button className="w-full sm:w-auto backdrop-blur-md bg-gray-500/30 hover:bg-gray-500/50 border border-[#FDE9A3] text-white text-sm px-6 py-3 rounded-full shadow-lg hover:shadow-yellow-500/40 transition duration-300 ease-in-out transform hover:scale-105 font-medium flex items-center justify-center">
+              <span className="mr-2">🚀</span>
+              <strong>Register Now</strong>
+            </button>
+          </Link>
+          <br className="hidden sm:block" />
+          <h1 className="inline-block text-white text-xl sm:text-xl md:text-2xl font-semibold bg-white/10 backdrop-blur-md px-6 py-0 rounded-xl shadow-md border border-white/20">
+              06/06 &mdash; 08/06
+          </h1>
         </div>
 
-        <CustomizedButtons />
+        {/* <CustomizedButtons /> */}
         
         <div className="relative flex flex-col min-h-fit p-4 pt-5 md:pt-5 md:px-12 xl:px-20 md:py-4">
           {/* <div className="flex justify-center items-center w-full py-16">
             {modelAnimation()}
           </div> */}
-          <div className="flex justify-center items-center w-full py-10 md:py-16">
+          <div className="flex justify-center items-center w-full py-5 md:py-8">
             <Countdown />
           </div>
         </div>
 
-          <div className="w-full flex flex-col bg-[#101010]/90">
+        <div className="w-full flex flex-col bg-[#101010]/90">
 
           <BrochureViewer />
+
+        </div>
+
+        <div className="w-full flex flex-col bg-transparent">
+
+          <div className="flex items-center justify-center px-6 md:px-12 xl:px-24 py-5">
+            <p className="text-6xl md:text-7xl lg:text-8xl xl:text-[9rem] font-extrabold leading-tight text-center tracking-wider">
+              {["Myth", "Maya", "Mystery!"].map((word) => (
+                <span
+                  key={word}
+                  className="block bg-clip-text text-transparent drop-shadow-[0_0_15px_rgba(255,215,0,0.6)]"
+                  style={{
+                    backgroundImage: "url('/mmm background.jpg')",
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                    filter: "brightness(1.4)",
+                    WebkitTextStroke: "1px #f5deb3",
+                    letterSpacing: "0.05em", 
+                  }}
+                >
+                  {word}
+                </span>
+              ))}
+            </p>
+          </div>
+        </div>
+
+        <div className="w-full flex flex-col bg-[#101010]/90">
           
-            <div className="flex flex-col items-center justify-center p-8 md:px-10 sm:px-16 py-20 md:py-32">
+            <div className="flex flex-col items-center justify-center p-8 md:px-10 sm:px-16 py-10 md:py-16">
               <motion.div
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
@@ -237,47 +287,7 @@ export default function Home() {
               </motion.div>
             </div>
           </div>
-          <div className="flex flex-col md:flex-row justify-between items-center gap-16 md:gap-20 px-6 md:px-12 xl:px-24 py-20">
-
-            <p className="max-w-4xl text-6xl md:text-7xl lg:text-8xl xl:text-[9rem] font-extrabold leading-tight text-center md:text-left tracking-tight">
-              <span
-                className="block bg-clip-text text-transparent drop-shadow-[0_0_15px_rgba(255,215,0,0.6)]"
-                style={{
-                  backgroundImage: "url('/mmm background.jpg')", // parchment image
-                  backgroundSize: "cover",
-                  backgroundPosition: "center",
-                  filter: "brightness(1.4)", // Make parchment brighter
-                  WebkitTextStroke: "1px #f5deb3", // Light wheat-colored stroke
-                }}
-              >
-                Myth
-              </span>
-              <span
-                className="block bg-clip-text text-transparent drop-shadow-[0_0_15px_rgba(255,215,0,0.6)]"
-                style={{
-                  backgroundImage: "url('/mmm background.jpg')",
-                  backgroundSize: "cover",
-                  backgroundPosition: "center",
-                  filter: "brightness(1.4)",
-                  WebkitTextStroke: "1px #f5deb3",
-                }}
-              >
-                Maya
-              </span>
-              <span
-                className="block bg-clip-text text-transparent drop-shadow-[0_0_15px_rgba(255,215,0,0.6)]"
-                style={{
-                  backgroundImage: "url('/mmm background.jpg')",
-                  backgroundSize: "cover",
-                  backgroundPosition: "center",
-                  filter: "brightness(1.4)",
-                  WebkitTextStroke: "1px #f5deb3",
-                }}
-              >
-                Mystery!
-              </span>
-            </p>
-          </div>
+       
         <Footer />
       </div>
     </div>

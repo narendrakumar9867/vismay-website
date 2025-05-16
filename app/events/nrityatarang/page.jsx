@@ -13,7 +13,7 @@ export const metadata = {
     title: "Events|Vismay",
     description:
       "Relive the magic of Vismay at GMCMirag—explore unforgettable moments, vibrant snapshots, and the spirit of celebration that brings our cultural community together.",
-    url: "https://vismaygmcmiraj.in/events/natyarang",
+    url: "https://vismaygmcmiraj.in/events/nrityatarang",
     images:
       "https://res.cloudinary.com/drtmfrghg/image/upload/v1708016443/opengraph-image_vkiopn.jpg",
     siteName: "Vismay - GMCMiraj",
@@ -22,7 +22,7 @@ export const metadata = {
   },
 };
 
-const EventnatyarangPage = () => {
+const EventnrityatarangPage = () => {
 
   return (
     <>
@@ -32,7 +32,7 @@ const EventnatyarangPage = () => {
         { /* Header */}
         <div className="pt-12 pb-8 text-center px-4 md:px-12">
           <h1 className="text-4xl md:text-5xl font-bold">
-            <span className="text-[#FDE9A3]">NATYARANG,</span> Drama Competition.
+            <span className="text-[#FDE9A3]">NRITYATARANG,</span> Drama Competition.
           </h1>
           <p className="text-white max-w-3xl mx-auto mt-4 text-lg font-semibold">
             Is your group full of drama kings and queens? Then why waste such a
@@ -155,6 +155,6 @@ const EventnatyarangPage = () => {
   );
 };
 
-export default EventnatyarangPage;
+export default EventnrityatarangPage;
 
 

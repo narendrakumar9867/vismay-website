@@ -49,7 +49,7 @@ const HumansCard = ({
       >
         <Image
           src={profilepic}
-          className="w-full h-[320px] object-cover rounded-t-lg"
+          className="w-full h-[400px] object-cover rounded-t-lg"
           placeholder="blur"
           alt={`Profile of ${name}`}
           width={260}

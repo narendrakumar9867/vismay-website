@@ -118,12 +118,12 @@ export default function Contact() {
               </p>
               <div className="flex flex-col gap-12 text-white font-normal text-[1rem] md:flex-row lg:text-[1.5rem]">
                 <div className="flex flex-col items-start gap-2">
-                  <p>+91 80104 59236</p>
-                  <p>Yash Vinkare</p>
+                  <p>+91 89992 84279</p>
+                  <p>Ananya Shaji</p>
                 </div>
                 <div className="flex flex-col items-start gap-2">
-                  <p>+91 73879 33972</p>
-                  <p>Kshitij Dhandare</p>
+                  <p>+91 90216 37161</p>
+                  <p>Himanshu Kumre</p>
                 </div>
               </div>
             </div>

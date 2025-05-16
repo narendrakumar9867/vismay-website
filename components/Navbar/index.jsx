@@ -107,41 +107,41 @@ export default function Navbar() {
       </div>
 
       {/* Mobile Menu */}
-      <div
-        id="menu"
-        className={`fixed inset-0 z-40 min-h-screen py-1 pt-16 px-8 backdrop-blur-lg 
-          transition-all duration-300 bg-[#090909cc] flex justify-left items-start 
-          ${isMenuOpen ? "block" : "hidden"}`}
-      >
         <div
-          className="flex flex-col space-y-8 text-lg text-[#9d9d9d] 
-            font-medium uppercase p-8 border border-[#222] rounded-[2rem] 
-            bg-[#090909] bg-opacity-80"
+  id="menu"
+  className={`fixed inset-0 z-40 py-4 px-4 transition-all duration-300
+    flex justify-start items-start ${isMenuOpen ? "block" : "hidden"}`}
+>
+  <div
+    className="mt-4 flex flex-col space-y-4 text-white text-sm 
+      w-[50%] max-w-[300px] p-4 rounded-2xl shadow-xl 
+      backdrop-blur-md bg-[#1a1a1a]/80"
+  >
+    {/* Close button */}
+    <button
+      onClick={() => setMenuOpen(false)}
+      className="self-end text-xl text-white"
+    >
+      ✕
+    </button>
+
+    {/* Menu Items */}
+    {navigationItems.map(({ label, href, icon: Icon }) => (
+      <Link href={href} key={label} onClick={() => setMenuOpen(false)}>
+        <div
+          className="flex items-center gap-3 px-3 py-2 rounded-xl
+            hover:bg-white/10 transition duration-200"
         >
-          {navigationItems.map(({ label, href, icon: Icon }) => (
-            <Link
-              href={href}
-              key={label}
-              className="w-full"
-              onClick={() => setMenuOpen(false)}
-            >
-              <div
-                className={`group relative flex items-left gap-4 p-3 rounded-2xl 
-                  transition-all duration-300 ease-in-out 
-                  text-white shadow-md hover:bg-gradient-to-r from-[#ffffff14] to-[#ffffff0a]`}
-                style={{
-                  backdropFilter: "blur(10px)",
-                  WebkitBackdropFilter: "blur(10px)",
-                  background: "#ffffff0a",
-                }}
-              >
-                <Icon className="w-6 h-6 text-white" />
-                <p className="whitespace-nowrap text-base font-semibold">{label}</p>
-              </div>
-            </Link>
-          ))}
+          <Icon className="w-5 h-5" />
+          <span className="font-medium">{label}</span>
         </div>
-      </div>
+      </Link>
+    ))}
+  </div>
+</div>
+
+
+
     </>
   );
 }

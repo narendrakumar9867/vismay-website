@@ -2,7 +2,6 @@ import Navbar from "@/components/Navbar";
 import Link from "next/link";
 
 import Footer from "@/components/Footer";
-import FooterAnimation from "@/components/FooterAnimation";
 
 export const metadata = {
   title: "Events|Vismay",
@@ -27,15 +26,15 @@ const EventsPage = () => {
   const events = [
     {
       date: "08 NOV",
-      title: "NATYARANG: Dance competition",
+      title: "NRITYATARANG: Dance competition",
       description: "Solo, duet, and group dance competition.",
       image: "/eventsPage/dance_image.jpg",
-      link1: "/events/natyarang",
-      link2: "https://wa.me/919867805822?text=Hello!%20I%27m%20interested%20in%20participating%20in%20the%20dance%20competition%20at%20VISMAY%202025.%20Please%20let%20me%20know%20the%20details%20and%20registration%20process", // Example link for 'Register'
+      link1: "/events/nrityatarang",
+      link2: "https://wa.me/919867805822?text=Hello!%20I%27m%20interested%20in%20participating%20in%20the%20dance%20competition%20at%20VISMAY%202025.%20Please%20let%20me%20know%20the%20details%20and%20registration%20process",
     },
     {
       date: "12 NOV",
-      title: "SWARSANGRAM: Singing competition",
+      title: "SWARSANGAM: Singing competition",
       description: "Solo and duet singing competition.",
       image: "/eventsPage/singing_image.jpg",
       link1: "/events/swarsangam",
@@ -101,7 +100,7 @@ const EventsPage = () => {
             <span className="text-[#FDE9A3]">Vismay</span> Events.
           </h1>
           <p className="text-gray-400 max-w-3xl mx-auto mt-4 text-lg">
-            Relive the magic of Vismay at Goverment Medical College and Hospital, Mirag—explore unforgettable moments, vibrant snapshots, and the spirit of celebration that brings our cultural community together.
+            Relive the magic of Vismay at Goverment Medical College and Hospital, Miraj—explore unforgettable moments, vibrant snapshots, and the spirit of celebration that brings our cultural community together.
           </p>
         </div>
 
@@ -135,17 +134,17 @@ const EventsPage = () => {
               <p className="text-sm mb-3">{event.description}</p>
 
               {/* Buttons Section */}
-              <div className="flex justify-between mt-4">
+              <div className="flex flex-col sm:flex-row justify-between gap-4 mt-4">
                 <Link href={event.link1}>
-                  <button className="flex items-center backdrop-blur-md bg-transparent hover:bg-[#FDE9A3] border border-white text-white text-sm px-8 py-3 rounded-xl shadow-transparent hover:text-black hover:shadow-[#FDE9A3] transition duration-300 ease-in-out transform hover:scale-105 font-normal space-x-2">
+                  <button className="w-full sm:w-auto flex items-center justify-center backdrop-blur-md bg-transparent hover:bg-[#FDE9A3] border border-white text-white text-sm px-8 py-3 rounded-xl hover:text-black transition duration-300 ease-in-out transform hover:scale-105 font-normal">
                     <span className="mr-2">🔍</span>
                     <strong>Know More</strong>
                   </button>
                 </Link>
 
                 <Link href={event.link2}>
-                  <button className="flex items-center backdrop-blur-md bg-[#FDE9A3] hover:bg-[#FDE9A3] border border-white text-black text-sm px-8 py-3 rounded-xl shadow-transparent hover:shadow-[#FDE9A3] transition duration-300 ease-in-out transform hover:scale-105 font-normal space-x-2">
-                    <span className="mr-2">📝</span>
+                  <button className="w-full sm:w-auto flex items-center justify-center backdrop-blur-md bg-transparent hover:bg-[#FDE9A3] border border-white text-white text-sm px-8 py-3 rounded-xl transition duration-300 ease-in-out transform hover:scale-105 font-normal">
+                    <span className="mr-2">🖊️</span>
                     <strong>Register</strong>
                   </button>
                 </Link>
