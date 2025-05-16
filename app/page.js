@@ -1,6 +1,6 @@
 "use client";
 import React from 'react'
-import { useState, useEffect } from "react";
+import { useState, useEffect, useLayoutEffect  } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { motion } from "framer-motion";
@@ -12,34 +12,75 @@ import { Vismay } from "@/components/vismay_model";
 import { OrbitControls,Environment } from '@react-three/drei';
 import { useRef } from 'react';
 import { useFrame } from '@react-three/fiber';
+import { Box3, Vector3 } from 'three';
+
+const CenteredVismay = () => {
+  const meshRef = useRef();
+
+  useLayoutEffect(() => {
+    if (meshRef.current) {
+      const box = new Box3().setFromObject(meshRef.current);
+      const center = new Vector3();
+      box.getCenter(center);
+      meshRef.current.position.sub(center);
+    }
+  }, []);
+
+  return (
+    <group ref={meshRef}>
+      <Vismay />
+    </group>
+  );
+};
 
 const RotatingModel = () => {
   const groupRef = useRef();
+  const [scale, setScale] = useState([2.5, 2.5, 2.5]);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 768) {
+        setScale([2.2, 2.2, 2.2]); // Smaller scale for mobile
+      } else {
+        setScale([2.5, 2.5, 2.5]); // Default for larger screens
+      }
+    };
+
+    handleResize(); // Initial check
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   useFrame(() => {
     if (groupRef.current) {
-      groupRef.current.rotation.y += 0.005; 
+      groupRef.current.rotation.y += 0.005;
     }
   });
 
   return (
-    <group ref={groupRef} position={[0, 0, 0]}>
-      <Vismay />
+    <group ref={groupRef} scale={scale}>
+      <CenteredVismay />
     </group>
   );
 };
 
 const VismayModel = () => {
   return (
-    <div className="flex items-center justify-center px-6 md:px-12 xl:px-24 py-5">
-      <Canvas camera={{ position: [0, 0, 5] }}>
+    <div className="pt-1 pb-0 h-[32vh] w-full flex items-center justify-center">
+      <Canvas
+        camera={{ position: [0, 0, 7], fov: 50 }}
+        style={{ width: '100%', height: '100%' }}
+      >
+        <ambientLight intensity={0.8} />
+        <directionalLight position={[5, 5, 5]} intensity={1} />
         <Environment files="/assets/hdri/studio_small_03_1k.hdr" />
-        <OrbitControls enableZoom={false} enablePan={false} />
+        <OrbitControls enableZoom={false} enablePan={false} enableRotate={false} />
         <RotatingModel />
       </Canvas>
     </div>
   );
 };
+
 
 const Countdown = () => {
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
@@ -178,17 +219,15 @@ export default function Home() {
 
         <VismayModel />
         
-        <div className="text-white text-center flex-1 pt-14">
-          <h1 className="font-serif font-extrabold leading-none tracking-wide">
-            <span className="block text-6xl sm:text-7xl md:text-9xl text-[#FDE9A3]">Vismay</span>
-            <br className="hidden sm:block" />
-            <span className="block text-lg sm:text-2xl md:text-3xl font-normal mt-2">
-              More than just a story its a legacy
-            </span>
-          </h1>
-        </div>
+        <div className="text-white text-center flex-1 pt-0 mt-[-1rem]">
+  <h1 className="font-serif font-extrabold leading-none tracking-wide">
+    <span className="block text-lg sm:text-2xl md:text-3xl font-normal mt-[-0.5rem]">
+      More than just a story its a legacy
+    </span>
+  </h1>
+</div>
 
-        <div className="pt-14 md:pt-20 pb-2 px-6 flex flex-col sm:flex-row justify-center items-center gap-4">
+        <div className="pt-8 md:pt-12 pb-2 px-6 flex flex-col sm:flex-row justify-center items-center gap-4">
           {eventPage.map((event) => (
             <Link href={event.link}>
             <button className="w-full sm:w-auto backdrop-blur-md bg-gray-500/30 hover:bg-gray-500/50 border border-white text-white text-sm px-6 py-3 rounded-full shadow-lg hover:shadow-white transition duration-300 ease-in-out transform hover:scale-105 font-medium flex items-center justify-center">
