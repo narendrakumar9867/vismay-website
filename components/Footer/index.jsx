@@ -23,7 +23,7 @@ const Footer = () => {
             Icon={InstagramLogoIcon}
           />
           <SocialMediaIcon
-            href="https://wa.me/917506112522?text=Hello!%20I%27m%20interested%20in%20participating%20in%20the%20quiz%20competition%20at%20VISMAY%202025.%20Kindly%20share%20the%20details%20and%20how%20I%20can%20register."
+            href="https://wa.me/9021637161?text=Hello!%20I%27m%20interested%20in%20participating%20in%20the%20quiz%20competition%20at%20VISMAY%202025.%20Kindly%20share%20the%20details%20and%20how%20I%20can%20register."
             Icon={FaWhatsapp}
           />
         </div>
