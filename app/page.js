@@ -33,29 +33,30 @@ const CenteredVismay = () => {
   );
 };
 
-const RotatingModel = () => {
+const RotatingModel = ({ allowRotate }) => {
   const groupRef = useRef();
   const [scale, setScale] = useState([2.5, 2.5, 2.5]);
 
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth < 768) {
-        setScale([2.2, 2.2, 2.2]); // Smaller scale for mobile
+        setScale([2.2, 2.2, 2.2]);
       } else {
-        setScale([2.5, 2.5, 2.5]); // Default for larger screens
+        setScale([2.5, 2.5, 2.5]);
       }
     };
 
-    handleResize(); // Initial check
+    handleResize();
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  useFrame(() => {
-    if (groupRef.current) {
-      groupRef.current.rotation.y += 0.005;
-    }
-  });
+  // REMOVE auto-rotation
+  // useFrame(() => {
+  //   if (groupRef.current) {
+  //     groupRef.current.rotation.y += 0.005;
+  //   }
+  // });
 
   return (
     <group ref={groupRef} scale={scale}>
@@ -65,8 +66,23 @@ const RotatingModel = () => {
 };
 
 const VismayModel = () => {
+  const [allowRotate, setAllowRotate] = useState(false);
+
+  const handlePointerDown = () => {
+    setAllowRotate(true);
+  };
+
+  const handlePointerUp = () => {
+    setAllowRotate(false);
+  };
+
   return (
-    <div className="pt-1 pb-0 h-[32vh] w-full flex items-center justify-center">
+    <div
+      className="pt-1 pb-0 h-[32vh] w-full flex items-center justify-center"
+      onPointerDown={handlePointerDown}
+      onPointerUp={handlePointerUp}
+      onPointerLeave={handlePointerUp} // handle case when user drags out of area
+    >
       <Canvas
         camera={{ position: [0, 0, 7], fov: 50 }}
         style={{ width: '100%', height: '100%' }}
@@ -74,12 +90,13 @@ const VismayModel = () => {
         <ambientLight intensity={0.8} />
         <directionalLight position={[5, 5, 5]} intensity={1} />
         <Environment files="/assets/hdri/studio_small_03_1k.hdr" />
-        <OrbitControls enableZoom={false} enablePan={false} enableRotate={false} />
+        <OrbitControls enableZoom={false} enablePan={false} enableRotate={allowRotate} />
         <RotatingModel />
       </Canvas>
     </div>
   );
 };
+
 
 
 const Countdown = () => {

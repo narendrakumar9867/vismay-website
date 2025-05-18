@@ -32,7 +32,7 @@ const EventnrityatarangPage = () => {
         { /* Header */}
         <div className="pt-12 pb-8 text-center px-4 md:px-12">
           <h1 className="text-4xl md:text-5xl font-bold">
-            <span className="text-[#FDE9A3]">NRITYATARANG,</span> Drama Competition.
+            <span className="text-[#FDE9A3]">NRITYATARANG,</span> Dance Competition.
           </h1>
           <p className="text-white max-w-3xl mx-auto mt-4 text-lg font-semibold">
             Is your group full of drama kings and queens? Then why waste such a
