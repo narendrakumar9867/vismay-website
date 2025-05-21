@@ -48,14 +48,14 @@ const EventsPage = () => {
     {
       title: "Core Med Conclave: Quiz competition",
       description: "All the UG students can participate in the quiz.",
-      image: "/eventsPage/quiz_image.jpg",
+      image: "/eventsPage/quiz_image.png",
       link1: "/events/CoreMedConclave",
       link2: "https://wa.me/919137268322?text=Hello!%20I%27m%20interested%20in%20participating%20in%20the%20quiz%20competition%20at%20VISMAY%202025.%20Kindly%20share%20the%20details%20and%20how%20I%20can%20register",
     },
     {
       title: "ANTARNAAD: Open mic competition",
       description: "Let the voice of your mind be heard...",
-      image: "/eventsPage/openmic_image.jpg",
+      image: "/eventsPage/openmic_image.png",
       link1: "/events/antarnaad",
       link2: "https://wa.me/918605552982?text=Hello!%20I%27m%20interested%20in%20participating%20in%20the%20open%20mic%20competition%20at%20VISMAY%202025.%20Kindly%20share%20the%20details%20and%20how%20I%20can%20register",
     },

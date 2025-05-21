@@ -1,86 +1,90 @@
-import React, { useRef } from 'react'
-import { useGLTF } from '@react-three/drei'
+import { useGLTF, useAnimations } from '@react-three/drei'
+import { useEffect, useRef } from 'react'
 
 export function Vismay(props) {
-  const { nodes, materials } = useGLTF('/Vismay.glb')
+  const group = useRef()
+  const { nodes, materials, animations } = useGLTF('/Vismay.glb')
+  const { actions, names } = useAnimations(animations, group)
+  const hasAnimated = useRef(false)
 
-  console.log("Nodes:", nodes)
-  console.log("Materials:", materials)
-
+  useEffect(() => {
+    if (!hasAnimated.current && actions && names.length > 0 && actions[names[0]]) {
+      hasAnimated.current = true
+      actions[names[0]].reset().fadeIn(0.5).play()
+    }
+  }, [actions, names[0]])
   return (
-    <group {...props} dispose={null}>
-      <mesh 
-        castShadow 
-        receiveShadow 
-        geometry={nodes.Node1.geometry} 
-        material={materials.x1} 
-      />
-      <mesh 
-        castShadow 
-        receiveShadow 
-        geometry={nodes.Node2.geometry} 
-        material={materials.x1} 
-      />
-      <mesh 
-        castShadow 
-        receiveShadow 
-        geometry={nodes.Node3.geometry} 
-        material={materials.x1} 
-      />
-      <mesh 
-        castShadow 
-        receiveShadow 
-        geometry={nodes.Node4.geometry} 
-        material={materials.x1} 
-      />
-      <mesh 
-        castShadow 
-        receiveShadow 
-        geometry={nodes.Node5.geometry} 
-        material={materials.x1} 
-      />
-      <mesh 
-        castShadow 
-        receiveShadow 
-        geometry={nodes.Node6.geometry} 
-        material={materials.x1} 
-      />
-      <mesh 
-        castShadow 
-        receiveShadow 
-        geometry={nodes.Node7.geometry} 
-        material={materials.x1} 
-      />
-      <mesh 
-        castShadow 
-        receiveShadow 
-        geometry={nodes.Node8.geometry} 
-        material={materials.x1} 
-      />
-      <mesh 
-        castShadow 
-        receiveShadow 
-        geometry={nodes.Node9.geometry} 
-        material={materials.x1} 
-      />
-      <mesh 
-        castShadow 
-        receiveShadow 
-        geometry={nodes.Node10.geometry} 
-        material={materials.x1} 
-      />
-      <mesh 
-        castShadow 
-        receiveShadow 
-        geometry={nodes.Node11.geometry} 
-        material={materials.x1} 
-      />
-      <mesh 
-        castShadow 
-        receiveShadow 
-        geometry={nodes.Node12.geometry} 
-        material={materials.x1} 
-      />
+    <group ref={group} {...props} dispose={null}>
+      <group name="Scene">
+        <mesh
+          name="chest"
+          castShadow
+          receiveShadow
+          geometry={nodes.chest.geometry}
+          material={materials.chest_and_safe_MT}
+          rotation={[Math.PI / 2.1, 0, 0]}
+          scale={0.003}
+        />
+        <mesh
+          name="chest_cap_pivot_Rotation"
+          castShadow
+          receiveShadow
+          geometry={nodes.chest_cap_pivot_Rotation.geometry}
+          material={materials['chest_and_safe_MT.001']}
+          position={[-0.086, 1.943, -1.159]}
+          rotation={[1.568, 0, 0]}
+          scale={0.003}>
+          <mesh
+            name="latch_pivot_rotation001"
+            castShadow
+            receiveShadow
+            geometry={nodes.latch_pivot_rotation001.geometry}
+            material={materials['chest_and_safe_MT.002']}
+            position={[-7.445, 662.545, -103.211]}
+            rotation={[-0.119, 0, 0]}
+            scale={1.126}>
+            <mesh
+              name="latch_pivot_rotation"
+              castShadow
+              receiveShadow
+              geometry={nodes.latch_pivot_rotation.geometry}
+              material={materials['chest_and_safe_MT.002']}
+              position={[-0.825, 2.445, 46.044]}
+              rotation={[0.169, 0, 0]}
+            />
+          </mesh>
+        </mesh>
+        <mesh
+          name="chest001"
+          castShadow
+          receiveShadow
+          geometry={nodes.chest001.geometry}
+          material={materials.metal}
+          position={[1.718, 1.093, 0.068]}
+          rotation={[-Math.PI / 2, Math.PI / 3, Math.PI]}
+          scale={0.003}
+        />
+        <mesh
+          name="chest002"
+          castShadow
+          receiveShadow
+          geometry={nodes.chest002.geometry}
+          material={materials.metal}
+          position={[-1.997, 1.108, 0.03]}
+          rotation={[-Math.PI / 2, -Math.PI / 3, -Math.PI]}
+          scale={0.003}
+        />
+        <mesh
+          name="Cube"
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube.geometry}
+          material={materials.vismay}
+          position={[-0.084, 1.096, -0.102]}
+          rotation={[Math.PI / 2, 0, 0]}
+          scale={0.714}
+        />
+      </group>
     </group>
   )
 }

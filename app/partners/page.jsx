@@ -3,7 +3,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import TitleSponsorCard from "@/components/TitleSponsorCard";
 import SponsorCard from "@/components/ui/cards";
 import FooterAnimation from "@/components/FooterAnimation";
-import mlh from "@/public/partnersPage/PW Med Ed.jpg";
+import mlh from "@/public/partnersPage/MedEd.jpg";
 import github from "@/public/partnersPage/CCT.jpg";
 import postman from "@/public/partnersPage/Galaxy.jpg";
 import bobble from "@/public/partnersPage/TMAX.png";
@@ -31,116 +31,34 @@ export const metadata = {
 
 const normalSponsorsData = [
   {
-    sponsor: "MLH",
-    category: "Platform Partner",
+    sponsor: "MedEd",
+    category: "",
     sponsorimgsrc: mlh,
-    site: "https://mlh.io",
   },
   {
-    sponsor: "GitHub",
-    category: "Gold Sponsor",
+    sponsor: "CCT",
+    category: "",
     sponsorimgsrc: github,
-    site: "https://gh.io/hackbyte2",
   },
   {
-    sponsor: "Postman",
-    category: "Gold Sponsor",
+    sponsor: "Galaxy",
+    category: "",
     sponsorimgsrc: postman,
-    site: "https://community.postman.com",
   },
   {
-    sponsor: "Bobble Fan Store",
-    category: "Merch Partner",
+    sponsor: "TMAX",
+    category: "",
     sponsorimgsrc: bobble,
-    site: "https://fanstore.bobble.ai",
   },
   {
-    sponsor: "Godspeed Systems",
-    category: "Silver Sponsor",
-    sponsorimgsrc: godspeed,
-    site: "https://godspeed.systems",
-  },
-  {
-    sponsor: "Devfolio",
-    category: "Platform Partner",
-    sponsorimgsrc: devfolio,
-    site: "https://devfolio.co",
-  },
-  {
-    sponsor: "Virtual Protocol",
-    category: "Bronze Sponsor",
-    sponsorimgsrc: virtualProtocol,
-    site: "https://www.virtuals.io/",
-  },
-  {
-    sponsor: "NextGen",
-    category: "Bronze Sponsor",
-    sponsorimgsrc: nextgen,
-    site: "https://nextgenglobalhub.github.io/opensourcecohort/",
-  },
-  {
-    sponsor: "Auth0",
-    category: "Track Sponsor",
-    sponsorimgsrc: auth0,
-    site: "http://hackp.ac/auth0",
-  },
-  {
-    sponsor: "Taipy",
-    category: "Track Sponsor",
-    sponsorimgsrc: taipy,
-    site: "https://hackp.ac/taipy-gettingstarted",
-  },
-  {
-    sponsor: "Go Daddy Registry",
-    category: "Track Sponsor",
-    sponsorimgsrc: godaddy,
-    site: "http://hackp.ac/godaddyregistry",
-  },
-];
-
-const inKindSponsorsData = [
-  {
-    sponsor: "Balsamiq",
-    category: "Community Sponsor",
-    sponsorimgsrc: balsamiq,
-    site: "https://balsamiq.com",
-  },
-  {
-    sponsor: "Edubard",
-    category: "Media Partner",
-    sponsorimgsrc: edubard,
-    site: "https://edubard.in",
-  },
-  {
-    sponsor: "Wolfram",
-    category: "Community Sponsor",
-    sponsorimgsrc: wolfram,
-    site: "https://www.wolfram.com/wolfram-one/",
-  },
-  {
-    sponsor: "MongoDB",
-    category: "Community Sponsor",
-    sponsorimgsrc: mongodb,
-    site: "https://www.mongodb.com/",
-  },
-  {
-    sponsor: "Finlatics",
-    category: "Community Sponsor",
-    sponsorimgsrc: finlatics,
-    site: "https://www.finlatics.com/",
-  },
-  {
-    sponsor: "JDoodle",
-    category: "Community Sponsor",
-    sponsorimgsrc: jdoodle,
-    site: "https://www.jdoodle.com/?utm_source=Event+Website&utm_medium=Event+Sponsorship&utm_campaign=HackByte+Sponsorship+2024&utm_id=HackByte+2.0",
-  },
-   {
-    sponsor: "Tea Max",
+    sponsor: "Combined Logo",
     category: "",
     sponsorimgsrc: Ram,
   },
+ 
 ];
+
+
 
 const Partners = () => {
   return (
@@ -178,13 +96,6 @@ const Partners = () => {
             >
               Sponsors
             </TabsTrigger>
-            <TabsTrigger
-              value="InKind Sponsors"
-              className="sm:p-4 p-2 sm:w-60 w-40 min-[300px]:text-lg sm:text-2xl 
-                text-xl leading-7"
-            >
-              In Kind Sponsors
-            </TabsTrigger>
           </TabsList>
           <TabsContent value="Sponsors">
             <div className="w-full flex flex-col items-center gap-8 xl:gap-12">
@@ -198,16 +109,6 @@ const Partners = () => {
                   return <SponsorCard key={index} index={index} {...sponsor} />;
                 })}
               </div>
-            </div>
-          </TabsContent>
-          <TabsContent value="InKind Sponsors">
-            <div
-              className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 
-                gap-8 xl:gap-12"
-            >
-              {inKindSponsorsData.map((sponsor, index) => {
-                return <SponsorCard key={index} index={index} {...sponsor} />;
-              })}
             </div>
           </TabsContent>
         </Tabs>

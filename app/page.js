@@ -106,12 +106,12 @@ export default function Home() {
     {
       imgSrc: "/aboutPage/dean.png",
       title: "Dean's Message",
-      description: `At our college, we believe that growth comes not just from academics, but also from shared experiences, challenges, and learning beyond the classroom. it is through these moments that we build confidence, character, and lasting friendships. our campus provides a space where students can explore their interests, take part in diverse activities, and enjoy a balanced college life. with that spirit, we are excited to welcome you to vismay 2025 — our annual cultural, sports, and literary fest. we hope these days offer you a chance to connect, compete, and create memories that will stay with you long after the fest is over.`,
+      description:` At our college, we believe that growth comes not just from academics, but also from shared experiences, challenges, and learning beyond the classroom. it is through these moments that we build confidence, character, and lasting friendships. our campus provides a space where students can explore their interests, take part in diverse activities, and enjoy a balanced college life. with that spirit, we are excited to welcome you to vismay 2025 — our annual cultural, sports, and literary fest. we hope these days offer you a chance to connect, compete, and create memories that will stay with you long after the fest is over.`,
     },
     {
       imgSrc: "/aboutPage/MS's.png",
       title: "MS's Message",
-      description: `MS'S MESSAGE College life is more than just lectures and textbooks — it's about finding balance, building connections, and growing into well-rounded individuals. As doctors in the making, it's important that we also take time to relax, express ourselves, and support each other. Vismay 2025 is a celebration of this very spirit. It brings together students through music, sports, art, and shared enthusiasm. It’s an opportunity to step away from routine, discover new talents, and strengthen the sense of community we all value. We look forward to seeing you participate, perform, and enjoy every moment. Let this fest be a refreshing and meaningful chapter in your journey.`
+      description: `MS'S MESSAGE College life is more than just lectures and textbooks — its about finding balance, building connections, and growing into well-rounded individuals. As doctors in the making, it's important that we also take time to relax, express ourselves, and support each other. Vismay 2025 is a celebration of this very spirit. It brings together students through music, sports, art, and shared enthusiasm. It’s an opportunity to step away from routine, discover new talents, and strengthen the sense of community we all value. We look forward to seeing you participate, perform, and enjoy every moment. Let this fest be a refreshing and meaningful chapter in your journey.`
     },
   ];
 
