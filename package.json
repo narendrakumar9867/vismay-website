@@ -27,6 +27,7 @@
     "@react-three/drei": "^9.122.0",
     "@react-three/fiber": "^8.18.0",
     "aos": "^2.3.4",
+    "babel-plugin-styled-components": "^2.1.4",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
     "firebase": "^10.8.0",
