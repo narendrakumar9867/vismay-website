@@ -7,20 +7,34 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 // import  CustomizedButtons  from "@/components/register_button";
 import dynamic from 'next/dynamic';
+import { Canvas } from '@react-three/fiber';
 import { Vismay } from "@/components/vismay_model";
-import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Environment } from '@react-three/drei';
 
 const VismayModel = () => {
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768)
+    }
+
+    handleResize() // Initial check
+    window.addEventListener("resize", handleResize)
+
+    return () => window.removeEventListener("resize", handleResize)
+  }, [])
   return (
+     <div className="relative w-full h-96 overflow-hidden">
       <div className="absolute inset-0 z-10 flex items-center justify-center">
-        <Canvas camera={{ position: [0, 0, 10], fov: 25 }}>
+        <Canvas camera={{ position: [0, 0, isMobile ? 14 : 10], fov: isMobile ? 12 : 25 }}>
           <ambientLight intensity={1} />
           <Environment files="/assets/hdri/studio_small_03_1k.hdr" />
           <OrbitControls enableZoom={false} enablePan={false} />
-          <Vismay scale={1} position={[0, -0.5, 0]} />
+          <Vismay scale={isMobile ? 0.38 : 0.6} position={isMobile ? [0,-0.38,-1] : [0 , -0.6 , 0]} />
         </Canvas>
       </div>
+    </div>
   )
 };
 
@@ -86,7 +100,7 @@ export default function Home() {
     {
       imgSrc: "/aboutPage/Screenshot_20250409_235837_ibisPaint X_1.png",
       title: "About Vismay 2025",
-      description: `Vismay, the annual cultural event of GMC Miraj, is a highly anticipated celebration that showcases the talents of our students, faculty, and staff. This iconic event has been a legacy of our college, bringing together the entire college community in a spectacular display of creativity,passion, and entertainment. What makes Vismay truly special is the fact that it's not just limited to our students. Our professors, UG,and PG students all come together to make this event grand success. It's a celebration that brings together people from all walks of life, united by their love for art, music, and culture.
+      description: `Vismay, the annual cultural event of GMC Miraj, is a highly anticipated celebration that showcases the talents of our students, faculty, and staff. This iconic event has been a legacy of our college, bringing together the entire college community in a spectacular display of creativity,passion, and entertainment.What makes Vismay truly special is the fact that it's not just limited to our students. Our professors, UG,and PG students all come together to make this eventa grand success. It's a celebration that brings together people from all walks of life, united by their love for art, music, and culture.
 `,
     },
     {
@@ -160,7 +174,10 @@ export default function Home() {
           </div>
         </div>
         <div className="mt-0 h-0.5 w-full bg-white opacity-40"></div>
-        
+
+      <div className="flex flex-col pt-10 pb-0">
+          <VismayModel />
+        </div>  
         
         <div className="text-white text-center flex-1 pt-0 mt-[-1rem]">
   <h1 className="font-serif font-extrabold leading-none tracking-wide">
@@ -169,8 +186,7 @@ export default function Home() {
     </span>
   </h1>
 </div>
-
-        <div className="pt-8 md:pt-12 pb-2 px-6 flex flex-col sm:flex-row justify-center items-center gap-4">
+        <div className="pt-14 md:pt-20 pb-2 px-6 flex flex-col sm:flex-row justify-center items-center gap-4">
           {eventPage.map((event) => (
             <Link href={event.link}>
             <button className="w-full sm:w-auto backdrop-blur-md bg-gray-500/30 hover:bg-gray-500/50 border border-white text-white text-sm px-6 py-3 rounded-full shadow-lg hover:shadow-white transition duration-300 ease-in-out transform hover:scale-105 font-medium flex items-center justify-center">
@@ -287,6 +303,7 @@ export default function Home() {
               </motion.div>
             </div>
           </div>
+       
         <Footer />
       </div>
     </div>
