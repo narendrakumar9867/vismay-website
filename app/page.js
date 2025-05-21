@@ -7,94 +7,21 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 // import  CustomizedButtons  from "@/components/register_button";
 import dynamic from 'next/dynamic';
-import { Canvas } from '@react-three/fiber';
 import { Vismay } from "@/components/vismay_model";
-import { OrbitControls,Environment } from '@react-three/drei';
-import { useRef } from 'react';
-import { useFrame } from '@react-three/fiber';
-import { Box3, Vector3 } from 'three';
-
-const CenteredVismay = () => {
-  const meshRef = useRef();
-
-  useLayoutEffect(() => {
-    if (meshRef.current) {
-      const box = new Box3().setFromObject(meshRef.current);
-      const center = new Vector3();
-      box.getCenter(center);
-      meshRef.current.position.sub(center);
-    }
-  }, []);
-
-  return (
-    <group ref={meshRef}>
-      <Vismay />
-    </group>
-  );
-};
-
-const RotatingModel = ({ allowRotate }) => {
-  const groupRef = useRef();
-  const [scale, setScale] = useState([2.5, 2.5, 2.5]);
-
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth < 768) {
-        setScale([2.2, 2.2, 2.2]);
-      } else {
-        setScale([2.5, 2.5, 2.5]);
-      }
-    };
-
-    handleResize();
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
-
-  // REMOVE auto-rotation
-  // useFrame(() => {
-  //   if (groupRef.current) {
-  //     groupRef.current.rotation.y += 0.005;
-  //   }
-  // });
-
-  return (
-    <group ref={groupRef} scale={scale}>
-      <CenteredVismay />
-    </group>
-  );
-};
+import { Canvas } from "@react-three/fiber";
+import { OrbitControls, Environment } from '@react-three/drei';
 
 const VismayModel = () => {
-  const [allowRotate, setAllowRotate] = useState(false);
-
-  const handlePointerDown = () => {
-    setAllowRotate(true);
-  };
-
-  const handlePointerUp = () => {
-    setAllowRotate(false);
-  };
-
   return (
-    <div
-      className="pt-1 pb-0 h-[32vh] w-full flex items-center justify-center"
-      onPointerDown={handlePointerDown}
-      onPointerUp={handlePointerUp}
-      onPointerLeave={handlePointerUp} // handle case when user drags out of area
-    >
-      <Canvas
-        camera={{ position: [0, 0, 7], fov: 50 }}
-        style={{ width: '100%', height: '100%' }}
-      >
-        <ambientLight intensity={0.8} />
-        <directionalLight position={[5, 5, 5]} intensity={1} />
-        <Environment files="/assets/hdri/studio_small_03_1k.hdr" />
-        <OrbitControls enableZoom={false} enablePan={false} enableRotate={allowRotate} />
-        <RotatingModel />
-      </Canvas>
-    </div>
-  );
+      <div className="absolute inset-0 z-10 flex items-center justify-center">
+        <Canvas camera={{ position: [0, 0, 10], fov: 25 }}>
+          <ambientLight intensity={1} />
+          <Environment files="/assets/hdri/studio_small_03_1k.hdr" />
+          <OrbitControls enableZoom={false} enablePan={false} />
+          <Vismay scale={1} position={[0, -0.5, 0]} />
+        </Canvas>
+      </div>
+  )
 };
 
 
@@ -159,7 +86,7 @@ export default function Home() {
     {
       imgSrc: "/aboutPage/Screenshot_20250409_235837_ibisPaint X_1.png",
       title: "About Vismay 2025",
-      description: `Vismay, the annual cultural event of GMC Miraj, is a highly anticipated celebration that showcases the talents of our students, faculty, and staff. This iconic event has been a legacy of our college, bringing together the entire college community in a spectacular display of creativity,passion, and entertainment.What makes Vismay truly special is the fact that it's not just limited to our students. Our professors, UG,and PG students all come together to make this eventa grand success. It's a celebration that brings together people from all walks of life, united by their love for art, music, and culture.
+      description: `Vismay, the annual cultural event of GMC Miraj, is a highly anticipated celebration that showcases the talents of our students, faculty, and staff. This iconic event has been a legacy of our college, bringing together the entire college community in a spectacular display of creativity,passion, and entertainment. What makes Vismay truly special is the fact that it's not just limited to our students. Our professors, UG,and PG students all come together to make this event grand success. It's a celebration that brings together people from all walks of life, united by their love for art, music, and culture.
 `,
     },
     {
@@ -233,8 +160,7 @@ export default function Home() {
           </div>
         </div>
         <div className="mt-0 h-0.5 w-full bg-white opacity-40"></div>
-
-        <VismayModel />
+        
         
         <div className="text-white text-center flex-1 pt-0 mt-[-1rem]">
   <h1 className="font-serif font-extrabold leading-none tracking-wide">
@@ -361,7 +287,6 @@ export default function Home() {
               </motion.div>
             </div>
           </div>
-       
         <Footer />
       </div>
     </div>

@@ -333,28 +333,6 @@ export default function ScheduleClient() {
             </TimelineContent>
             </TimelineItem>
 
-            <TimelineItem key="Seminar">
-                <TimelineOppositeContent
-                    sx={{ m: 'auto 0' }}
-                    align="right"
-                    variant="h6"
-                    color="#FDE9A3"
-                    component="span"
-                    > Seminar
-                    </TimelineOppositeContent>
-            <TimelineSeparator>
-                <TimelineConnector />
-                <TimelineDot color="primary" variant="#FDE9A3">
-                <RecordVoiceOverIcon  />
-                </TimelineDot>
-                <TimelineConnector />
-            </TimelineSeparator>
-            <TimelineContent sx={{ py: "12px", px: 2, textAlign: "left" }}>
-                <Typography>Enriching minds through knowledge and insight.
-                An interactive session to learn, share, and grow.</Typography>
-            </TimelineContent>
-            </TimelineItem>
-
             <TimelineItem key="FashionShow">
                 <TimelineOppositeContent
                     sx={{ m: 'auto 0' }}
