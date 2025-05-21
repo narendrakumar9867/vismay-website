@@ -9,36 +9,33 @@ import Link from "next/link";
 import dynamic from 'next/dynamic';
 import { Canvas } from '@react-three/fiber';
 import { Vismay } from "@/components/vismay_model";
-import { OrbitControls,Environment } from '@react-three/drei';
-import { useRef } from 'react';
-import { useFrame } from '@react-three/fiber';
-
-const RotatingModel = () => {
-  const groupRef = useRef();
-
-  useFrame(() => {
-    if (groupRef.current) {
-      groupRef.current.rotation.y += 0.005; 
-    }
-  });
-
-  return (
-    <group ref={groupRef} position={[0, 0, 0]}>
-      <Vismay />
-    </group>
-  );
-};
+import { OrbitControls, Environment } from '@react-three/drei';
 
 const VismayModel = () => {
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768)
+    }
+
+    handleResize() // Initial check
+    window.addEventListener("resize", handleResize)
+
+    return () => window.removeEventListener("resize", handleResize)
+  }, [])
   return (
-    <div className="flex items-center justify-center px-6 md:px-12 xl:px-24 py-5">
-      <Canvas camera={{ position: [0, 0, 5] }}>
-        <Environment files="/assets/hdri/studio_small_03_1k.hdr" />
-        <OrbitControls enableZoom={false} enablePan={false} />
-        <RotatingModel />
-      </Canvas>
+     <div className="relative w-full h-96 overflow-hidden">
+      <div className="absolute inset-0 z-10 flex items-center justify-center">
+        <Canvas camera={{ position: [0, 0, isMobile ? 14 : 10], fov: isMobile ? 12 : 25 }}>
+          <ambientLight intensity={1} />
+          <Environment files="/assets/hdri/studio_small_03_1k.hdr" />
+          <OrbitControls enableZoom={false} enablePan={false} />
+          <Vismay scale={isMobile ? 0.38 : 0.6} position={isMobile ? [0,-0.38,-1] : [0 , -0.6 , 0]} />
+        </Canvas>
+      </div>
     </div>
-  );
+  )
 };
 
 const Countdown = () => {
@@ -176,17 +173,17 @@ export default function Home() {
         </div>
         <div className="mt-0 h-0.5 w-full bg-white opacity-40"></div>
 
-        <VismayModel />
+      <div className="flex flex-col pt-10 pb-0">
+          <VismayModel />
+        </div>  
         
-        <div className="text-white text-center flex-1 pt-14">
-          <h1 className="font-serif font-extrabold leading-none tracking-wide">
-            <span className="block text-6xl sm:text-7xl md:text-9xl text-[#FDE9A3]">Vismay</span>
-            <br className="hidden sm:block" />
-            <span className="block text-lg sm:text-2xl md:text-3xl font-normal mt-2">
-              More than just a story its a legacy
-            </span>
-          </h1>
-        </div>
+        <div className="text-white text-center flex-1 pt-0 mt-[-1rem]">
+  <h1 className="font-serif font-extrabold leading-none tracking-wide">
+    <span className="block text-lg sm:text-2xl md:text-3xl font-normal mt-[-0.5rem]">
+      More than just a story its a legacy
+    </span>
+  </h1>
+</div>
 
         <div className="pt-14 md:pt-20 pb-2 px-6 flex flex-col sm:flex-row justify-center items-center gap-4">
           {eventPage.map((event) => (

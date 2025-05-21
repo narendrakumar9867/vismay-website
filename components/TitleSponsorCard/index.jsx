@@ -21,12 +21,6 @@ export default function TitleSponsorCard() {
   };
 
   return (
-    <a
-      href="https://www.logitech.com/en-in/mx/master-series.html"
-      target="_blank"
-      rel="noreferrer"
-      className="w-full xl:max-w-[95%] 2xl:max-w-[90%] flex justify-center"
-    >
       <Tilt options={defaultOptions}>
         <div
           className="flex flex-col md:flex-row shadow rounded-[8px]"
@@ -56,7 +50,7 @@ export default function TitleSponsorCard() {
           >
             <div className="w-full flex justify-between items-center">
               <p className="font-medium text-[2rem] xl:text-[2.25rem]">
-                Logitech
+                
               </p>
               <div className="hover:bg-[#1B1B1B] mt-1 p-1">
                 <ArrowRightIcon
@@ -69,13 +63,11 @@ export default function TitleSponsorCard() {
               Title Sponsor
             </p>
             <p className="text-[#EAECF0] font-normal font-[Inter] text-[1rem] md:text[1.125rem]">
-              The MX Master Series is expertly designed for users, empowering
-              coders to unleash productivity and optimize performance during
-              intense coding marathons.
+
             </p>
           </div>
         </div>
       </Tilt>
-    </a>
+  
   );
 }
