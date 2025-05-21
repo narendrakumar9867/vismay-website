@@ -15,7 +15,7 @@ export const metadata = {
       "Relive the magic of Vismay at GMCMirag—explore unforgettable moments, vibrant snapshots, and the spirit of celebration that brings our cultural community together.",
     url: "https://vismaygmcmiraj.in/events",
     images:
-      "https://res.cloudinary.com/drtmfrghg/image/upload/v1708016443/opengraph-image_vkiopn.jpg",
+      "https://res.cloudinary.com/dk1jk0yxz/image/upload/v1747833267/vismay_wdssm1.jpg",
     siteName: "Vismay - GMCMiraj",
     type: "website",
     locale: "en_US",
@@ -135,7 +135,7 @@ const EventsPage = () => {
                 </Link>
 
                 <Link href={event.link2}>
-                  <button className="w-full sm:w-auto flex items-center justify-center backdrop-blur-md bg-transparent hover:bg-[#988952] border border-white text-white text-sm px-8 py-3 rounded-xl transition duration-300 ease-in-out transform hover:scale-105 font-normal">
+                  <button className="w-full sm:w-auto flex items-center justify-center backdrop-blur-md bg-transparent hover:bg-[#FDE9A3] border border-white text-white text-sm px-8 py-3 rounded-xl hover:text-black transition duration-300 ease-in-out transform hover:scale-105 font-normal">
                     <span className="mr-2">🖊️</span>
                     <strong>Register</strong>
                   </button>
