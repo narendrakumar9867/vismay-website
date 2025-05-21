@@ -2,26 +2,12 @@ import Navbar from "@/components/Navbar";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import TitleSponsorCard from "@/components/TitleSponsorCard";
 import SponsorCard from "@/components/ui/cards";
-
-import mlh from "@/public/partnersPage/mlh.webp";
-import github from "@/public/partnersPage/github.jpg";
-import postman from "@/public/partnersPage/postman.jpg";
-import bobble from "@/public/partnersPage/bobble.webp";
-import godspeed from "@/public/partnersPage/godSpeed.jpg";
-import devfolio from "@/public/partnersPage/devfolio.webp";
-import virtualProtocol from "@/public/partnersPage/virtualProtocol.jpg";
-import nextgen from "@/public/partnersPage/nextgen.jpg";
-import auth0 from "@/public/partnersPage/auth0.webp";
-import taipy from "@/public/partnersPage/taipy.jpg";
-import godaddy from "@/public/partnersPage/godaddy.webp";
-
-import balsamiq from "@/public/partnersPage/balsamiq.webp";
-import edubard from "@/public/partnersPage/edubard.webp";
-import wolfram from "@/public/partnersPage/wolfram.webp";
-import mongodb from "@/public/partnersPage/mongodb.webp";
-import finlatics from "@/public/partnersPage/finlatics.webp";
-import jdoodle from "@/public/partnersPage/jdoodle.png";
 import FooterAnimation from "@/components/FooterAnimation";
+import mlh from "@/public/partnersPage/PW Med Ed.jpg";
+import github from "@/public/partnersPage/CCT.jpg";
+import postman from "@/public/partnersPage/Galaxy.jpg";
+import bobble from "@/public/partnersPage/TMAX.png";
+import Ram from "@/public/partnersPage/Combined Logo.png";
 import Footer from "@/components/Footer";
 
 export const metadata = {
@@ -36,7 +22,7 @@ export const metadata = {
       "Relive the magic of Vismay at GMCMirag—explore unforgettable moments, vibrant snapshots, and the spirit of celebration that brings our cultural community together.",
     url: "https://vismaygmcmiraj.in/partners",
     images:
-      "https://res.cloudinary.com/drtmfrghg/image/upload/v1708016443/opengraph-image_vkiopn.jpg",
+      "https://res.cloudinary.com/dk1jk0yxz/image/upload/v1747833267/vismay_wdssm1.jpg",
     siteName: "Vismay - GMCMiraj",
     type: "website",
     locale: "en_US",
@@ -148,6 +134,11 @@ const inKindSponsorsData = [
     category: "Community Sponsor",
     sponsorimgsrc: jdoodle,
     site: "https://www.jdoodle.com/?utm_source=Event+Website&utm_medium=Event+Sponsorship&utm_campaign=HackByte+Sponsorship+2024&utm_id=HackByte+2.0",
+  },
+   {
+    sponsor: "Tea Max",
+    category: "",
+    sponsorimgsrc: Ram,
   },
 ];
 

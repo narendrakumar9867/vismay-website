@@ -9,96 +9,35 @@ import img6 from "@/public/galleryPage/img6.webp";
 import img7 from "@/public/galleryPage/img7.webp";
 import img8 from "@/public/galleryPage/img8.webp";
 import img9 from "@/public/galleryPage/img9.webp";
+import img10 from "@/public/galleryPage/img10.webp";
+import img11 from "@/public/galleryPage/img11.webp";
+import img12 from "@/public/galleryPage/img12.webp";
+import img13 from "@/public/galleryPage/img13.webp";
+import img14 from "@/public/galleryPage/img14.webp";
+import img15 from "@/public/galleryPage/img15.webp";
 
 const GridImage = () => {
+  const images = [
+    img6, img7, img4, img8, img3, img5,
+    img1, img2, img9, img10, img11, img12,
+    img13, img14, img15
+  ];
+
   return (
-    <div className="max-w-8xl mx-auto py-16">
-      <div className="flex flex-col gap-5 md:flex-row">
-        <div className="flex flex-col gap-5">
-          <div>
-            <Image
-              src={img6}
-              alt="1"
-              className="xl:w-[430px] xl:h-[300px] lg:w-[320px] w-[300px] h-[200px] rounded-xl object-cover"
-              placeholder="blur"
-              priority
-            />
-          </div>
-          <div>
-            <Image
-              src={img7}
-              alt="2"
-              className="xl:w-[430px] xl:h-[280px] lg:w-[320px] w-[300px] h-[200px] rounded-xl object-cover"
-              placeholder="blur"
-            />
-          </div>
-          <div>
-            <Image
-              src={img4}
-              alt="3"
-              className="xl:w-[430px] xl:h-[530px] lg:w-[320px] w-[300px] h-[320px] rounded-xl object-cover"
-              placeholder="blur"
-            />
-          </div>
-        </div>
+    <div className="max-w-7xl mx-auto py-16 px-4">
 
-        <div className="flex flex-col gap-5">
-          <div>
+      <div className="columns-1 sm:columns-2 lg:columns-3 gap-6">
+        {images.map((img, index) => (
+          <div key={index} className="mb-6 break-inside-avoid">
             <Image
-              src={img8}
-              alt="4"
-              className="xl:w-[430px] xl:h-[520px] lg:w-[320px] w-[300px] h-[320px] rounded-xl object-cover"
+              src={img}
+              alt={`Gallery image ${index + 1}`}
+              className="w-full rounded-xl object-cover"
               placeholder="blur"
-              priority
+              priority={index < 6}
             />
           </div>
-          <div>
-            <Image
-              src={img3}
-              alt="5"
-              className="xl:w-[430px] xl:h-[300px] lg:w-[320px] w-[300px] h-[200px] rounded-xl object-cover"
-              placeholder="blur"
-            />
-          </div>
-          <div>
-            <Image
-              src={img5}
-              alt="6"
-              className="xl:w-[430px] xl:h-[280px] lg:w-[320px] w-[300px] h-[200px] rounded-xl object-cover"
-              placeholder="blur"
-            />
-          </div>
-        </div>
-
-        <div className="flex flex-col gap-5">
-          <div>
-            <Image
-              src={img1}
-              alt="7"
-              className="xl:w-[430px] xl:h-[280px] lg:w-[320px] w-[300px] h-[200px] rounded-xl object-cover"
-              placeholder="blur"
-              priority
-            />
-          </div>
-          <div>
-            <Image
-              src={img2}
-              alt="8"
-              className="xl:w-[430px] xl:h-[280px] lg:w-[320px] w-[300px] h-[200px] rounded-xl object-cover"
-              placeholder="blur"
-              priority
-            />
-          </div>
-          <div>
-            <Image
-              src={img9}
-              alt="9"
-              className="xl:w-[430px] xl:h-[540px] lg:w-[320px] w-[300px] h-[320px] rounded-xl object-cover"
-
-              placeholder="blur"
-            />
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );

@@ -15,7 +15,7 @@ export const metadata = {
       "Relive the magic of Vismay at GMCMirag—explore unforgettable moments, vibrant snapshots, and the spirit of celebration that brings our cultural community together.",
     url: "https://vismaygmcmiraj.in/events/runwayrendezvous",
     images:
-      "https://res.cloudinary.com/drtmfrghg/image/upload/v1708016443/opengraph-image_vkiopn.jpg",
+      "https://res.cloudinary.com/dk1jk0yxz/image/upload/v1747833267/vismay_wdssm1.jpg",
     siteName: "Vismay - GMCMiraj",
     type: "website",
     locale: "en_US",
