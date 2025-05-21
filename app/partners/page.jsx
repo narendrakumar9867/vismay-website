@@ -31,7 +31,7 @@ export const metadata = {
 
 const normalSponsorsData = [
   {
-    sponsor: "MedEd",
+    sponsor: "MedEd+",
     category: "",
     sponsorimgsrc: mlh,
   },
@@ -41,7 +41,7 @@ const normalSponsorsData = [
     sponsorimgsrc: github,
   },
   {
-    sponsor: "Galaxy",
+    sponsor: "Galaxy Fitness",
     category: "",
     sponsorimgsrc: postman,
   },
@@ -51,7 +51,7 @@ const normalSponsorsData = [
     sponsorimgsrc: bobble,
   },
   {
-    sponsor: "Combined Logo",
+    sponsor: "The Pathway",
     category: "",
     sponsorimgsrc: Ram,
   },
