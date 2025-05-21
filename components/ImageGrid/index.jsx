@@ -9,12 +9,12 @@ import img6 from "@/public/galleryPage/img6.webp";
 import img7 from "@/public/galleryPage/img7.webp";
 import img8 from "@/public/galleryPage/img8.webp";
 import img9 from "@/public/galleryPage/img9.webp";
-import img10 from "@/public/galleryPage/img10.jpg";
-import img11 from "@/public/galleryPage/img11.jpg";
-import img12 from "@/public/galleryPage/img12.jpg";
-import img13 from "@/public/galleryPage/img13.jpg";
-import img14 from "@/public/galleryPage/img14.jpg";
-import img15 from "@/public/galleryPage/img15.jpg";
+import img10 from "@/public/galleryPage/img10.webp";
+import img11 from "@/public/galleryPage/img11.webp";
+import img12 from "@/public/galleryPage/img12.webp";
+import img13 from "@/public/galleryPage/img13.webp";
+import img14 from "@/public/galleryPage/img14.webp";
+import img15 from "@/public/galleryPage/img15.webp";
 
 const GridImage = () => {
   const images = [
