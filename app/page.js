@@ -1,6 +1,6 @@
 "use client";
 import React from 'react'
-import { useState, useEffect } from "react";
+import { useState, useEffect, useLayoutEffect  } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { motion } from "framer-motion";
@@ -37,6 +37,8 @@ const VismayModel = () => {
     </div>
   )
 };
+
+
 
 const Countdown = () => {
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
@@ -184,7 +186,6 @@ export default function Home() {
     </span>
   </h1>
 </div>
-
         <div className="pt-14 md:pt-20 pb-2 px-6 flex flex-col sm:flex-row justify-center items-center gap-4">
           {eventPage.map((event) => (
             <Link href={event.link}>

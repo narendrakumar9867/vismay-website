@@ -25,7 +25,6 @@ export const metadata = {
 const EventsPage = () => {
   const events = [
     {
-      date: "08 NOV",
       title: "NRITYATARANG: Dance competition",
       description: "Solo, duet, and group dance competition.",
       image: "/eventsPage/dance_image.jpg",
@@ -33,7 +32,6 @@ const EventsPage = () => {
       link2: "https://wa.me/919867805822?text=Hello!%20I%27m%20interested%20in%20participating%20in%20the%20dance%20competition%20at%20VISMAY%202025.%20Please%20let%20me%20know%20the%20details%20and%20registration%20process",
     },
     {
-      date: "12 NOV",
       title: "SWARSANGAM: Singing competition",
       description: "Solo and duet singing competition.",
       image: "/eventsPage/singing_image.jpg",
@@ -41,7 +39,6 @@ const EventsPage = () => {
       link2: "https://wa.me/918691002183?text=Hello!%20I%27m%20interested%20in%20participating%20in%20the%20singing%20competition%20at%20VISMAY%202025.%20Kindly%20share%20the%20details%20and%20how%20I%20can%20register",
     },
     {
-      date: "15 NOV",
       title: "VADYAVISHWA: Music competition",
       description: "Battle of bands and Instruments competition.",
       image: "/eventsPage/music_image.jpg",
@@ -49,7 +46,6 @@ const EventsPage = () => {
       link2: "https://wa.me/917498135056?text=Hello!%20I%27m%20interested%20in%20participating%20in%20the%20Music%20competition%20(Battle%20of%20Bands%20/%20Instrumental)%20at%20VISMAY%202025.%20Kindly%20share%20the%20details%20and%20how%20I%20can%20register",
     },
     {
-      date: "15 NOV",
       title: "Core Med Conclave: Quiz competition",
       description: "All the UG students can participate in the quiz.",
       image: "/eventsPage/quiz_image.jpg",
@@ -57,7 +53,6 @@ const EventsPage = () => {
       link2: "https://wa.me/919137268322?text=Hello!%20I%27m%20interested%20in%20participating%20in%20the%20quiz%20competition%20at%20VISMAY%202025.%20Kindly%20share%20the%20details%20and%20how%20I%20can%20register",
     },
     {
-      date: "15 NOV",
       title: "ANTARNAAD: Open mic competition",
       description: "Let the voice of your mind be heard...",
       image: "/eventsPage/openmic_image.jpg",
@@ -65,7 +60,6 @@ const EventsPage = () => {
       link2: "https://wa.me/918605552982?text=Hello!%20I%27m%20interested%20in%20participating%20in%20the%20open%20mic%20competition%20at%20VISMAY%202025.%20Kindly%20share%20the%20details%20and%20how%20I%20can%20register",
     },
     {
-      date: "15 NOV",
       title: "NATYAGANDH: Drama competition",
       description: "Solo, duet, and group drama competition.",
       image: "/eventsPage/drama_image.jpg",
@@ -73,7 +67,6 @@ const EventsPage = () => {
       link2: "https://wa.me/918657313950?text=Hello!%20I%27m%20interested%20in%20participating%20in%20the%20drama%20competition%20at%20VISMAY%202025.%20Kindly%20share%20the%20details%20and%20how%20I%20can%20register",
     },
     {
-      date: "15 NOV",
       title: "Runway Rendezvous: Fashion show",
       description: "Fashion show competition.",
       image: "/eventsPage/fashion_image.jpg",
@@ -81,7 +74,6 @@ const EventsPage = () => {
       link2: "https://wa.me/917887325745?text=Hello!%20I%27m%20interested%20in%20participating%20in%20the%20fashion%20show%20at%20VISMAY%202025.%20Kindly%20share%20the%20details%20and%20how%20I%20can%20register",
     },
     {
-      date: "15 NOV",
       title: "KALAVISHKAAR: arts competition",
       description: "DRAWING COMPETITION, PHOTOGRAPHY COMPETITION",
       image: "/eventsPage/art_image.jpg",
