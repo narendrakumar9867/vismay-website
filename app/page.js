@@ -100,7 +100,7 @@ export default function Home() {
     {
       imgSrc: "/aboutPage/Screenshot_20250409_235837_ibisPaint X_1.png",
       title: "About Vismay 2025",
-      description: `Vismay, the annual cultural event of GMC Miraj, is a highly anticipated celebration that showcases the talents of our students, faculty, and staff. This iconic event has been a legacy of our college, bringing together the entire college community in a spectacular display of creativity,passion, and entertainment. What makes Vismay truly special is the fact that it's not just limited to our students. Our professors, UG,and PG students all come together to make this event a grand success. It's a celebration that brings together people from all walks of life, united by their love for art, music, and culture.
+      description: `Vismay, the annual cultural event of GMC Miraj, is a highly anticipated celebration that showcases the talents of our students, faculty, and staff. This iconic event has been a legacy of our college, bringing together the entire college community in a spectacular display of creativity,passion and entertainment. What makes Vismay truly special is the fact that it's not just limited to our students. Our professors, UG,and PG students all are coming together to make this event a grand success. It's a celebration that brings together people from all walks of life, united by their love for art, music, and culture.
 `,
     },
     {
