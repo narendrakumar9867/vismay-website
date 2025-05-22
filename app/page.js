@@ -111,7 +111,7 @@ export default function Home() {
     {
       imgSrc: "/aboutPage/MS's.png",
       title: "MS's Message",
-      description: `MS'S MESSAGE College life is more than just lectures and textbooks — its about finding balance, building connections, and growing into well-rounded individuals. As doctors in the making, it's important that we also take time to relax, express ourselves, and support each other. Vismay 2025 is a celebration of this very spirit. It brings together students through music, sports, art, and shared enthusiasm. It’s an opportunity to step away from routine, discover new talents, and strengthen the sense of community we all value. We look forward to seeing you participate, perform, and enjoy every moment. Let this fest be a refreshing and meaningful chapter in your journey.`
+      description: `College life is more than just lectures and textbooks — its about finding balance, building connections, and growing into well-rounded individuals. As doctors in the making, it's important that we also take time to relax, express ourselves, and support each other. Vismay 2025 is a celebration of this very spirit. It brings together students through music, sports, art, and shared enthusiasm. It’s an opportunity to step away from routine, discover new talents, and strengthen the sense of community we all value. We look forward to seeing you participate, perform, and enjoy every moment. Let this fest be a refreshing and meaningful chapter in your journey.`
     },
   ];
 
