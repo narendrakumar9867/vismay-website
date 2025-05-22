@@ -21,22 +21,22 @@ const VismayModel = () => {
 
     handleResize() // Initial check
     window.addEventListener("resize", handleResize)
-
     return () => window.removeEventListener("resize", handleResize)
   }, [])
+
   return (
-     <div className="relative w-full h-96 overflow-hidden">
+    <div className="relative w-full h-96 overflow-hidden">
       <div className="absolute inset-0 z-10 flex items-center justify-center">
         <Canvas camera={{ position: [0, 0, isMobile ? 14 : 10], fov: isMobile ? 12 : 25 }}>
           <ambientLight intensity={1} />
           <Environment files="/assets/hdri/studio_small_03_1k.hdr" />
           <OrbitControls enableZoom={false} enablePan={false} />
-          <Vismay scale={isMobile ? 0.38 : 0.6} position={isMobile ? [0,-0.38,-1] : [0 , -0.6 , 0]} />
+          <Vismay scale={isMobile ? 0.38 : 0.6} position={isMobile ? [0, -0.38, -1] : [0, -0.6, 0]} />
         </Canvas>
       </div>
     </div>
   )
-};
+}
 
 
 

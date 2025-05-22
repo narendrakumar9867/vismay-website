@@ -1,18 +1,24 @@
+import React, { useEffect, useRef } from 'react'
 import { useGLTF, useAnimations } from '@react-three/drei'
-import { useEffect, useRef } from 'react'
+import * as THREE from 'three' // Required for LoopOnce
 
 export function Vismay(props) {
   const group = useRef()
   const { nodes, materials, animations } = useGLTF('/Vismay.glb')
   const { actions, names } = useAnimations(animations, group)
-  const hasAnimated = useRef(false)
 
   useEffect(() => {
-    if (!hasAnimated.current && actions && names.length > 0 && actions[names[0]]) {
-      hasAnimated.current = true
-      actions[names[0]].reset().fadeIn(0.5).play()
+    if (names.length > 0) {
+      const action = actions[names[0]]
+      if (action) {
+        action.reset()
+        action.setLoop(THREE.LoopOnce, 1)
+        action.clampWhenFinished = true
+        action.fadeIn(0.5).play()
+      }
     }
-  }, [actions, names[0]])
+  }, [actions, names])
+
   return (
     <group ref={group} {...props} dispose={null}>
       <group name="Scene">
